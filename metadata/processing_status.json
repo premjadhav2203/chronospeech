@@ -1,0 +1,57 @@
+{
+  "dataset": "speech-contrastive-dataset",
+  "total_speeches_configured": 10,
+  "speeches_processed": [
+    {
+      "speech_id": "speech_001",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_002",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_003",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_004",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_005",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_006",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_007",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_008",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_009",
+      "status": "completed",
+      "recordings_count": 7
+    },
+    {
+      "speech_id": "speech_010",
+      "status": "completed",
+      "recordings_count": 7
+    }
+  ],
+  "speeches_pending": []
+}

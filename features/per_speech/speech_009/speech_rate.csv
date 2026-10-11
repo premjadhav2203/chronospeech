@@ -1,0 +1,15 @@
+speech_id,version,start_time,end_time,word_count,duration_seconds,words_per_second
+speech_009,good,0.000,35.584,93,35.584,2.61
+speech_009,good_vocalized_active,0.000,31.136,93,31.136,2.99
+speech_009,near_perfect,0.000,29.184,93,29.184,3.19
+speech_009,near_perfect_vocalized_active,0.000,26.144,93,26.144,3.56
+speech_009,mild_pacing,0.000,34.560,93,34.560,2.69
+speech_009,mild_pacing_vocalized_active,0.000,29.360,93,29.360,3.17
+speech_009,severe_pacing,0.000,26.709,93,26.709,3.48
+speech_009,severe_pacing_vocalized_active,0.000,23.925,93,23.925,3.89
+speech_009,flat_tone,0.000,30.976,93,30.976,3.00
+speech_009,flat_tone_vocalized_active,0.000,27.456,93,27.456,3.39
+speech_009,bad_pause,0.000,67.413,93,67.413,1.38
+speech_009,bad_pause_vocalized_active,0.000,44.917,93,44.917,2.07
+speech_009,low_volume,0.000,31.317,93,31.317,2.97
+speech_009,low_volume_vocalized_active,0.000,28.085,93,28.085,3.31

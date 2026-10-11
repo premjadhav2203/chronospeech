@@ -1,0 +1,30 @@
+{
+  "total_recordings_evaluated": 70,
+  "overall_score_mean": 70.84,
+  "overall_score_median": 69.37,
+  "overall_score_std": 15.25,
+  "overall_score_min": 39.88,
+  "overall_score_max": 99.61,
+  "variant_mean_scores": {
+    "good": 98.05,
+    "near_perfect": 81.05,
+    "mild_pacing": 67.28,
+    "severe_pacing": 64.16,
+    "flat_tone": 62.85,
+    "bad_pause": 64.77,
+    "low_volume": 57.68
+  },
+  "severity_distribution_total": {
+    "0": 136,
+    "1": 84,
+    "2": 27,
+    "3": 33
+  },
+  "mean_flawed_temporal_iou": 0.771,
+  "iou_by_type": {
+    "pacing": 0.741,
+    "pitch": 0.5,
+    "fluency": 1.0,
+    "volume": 0.9
+  }
+}

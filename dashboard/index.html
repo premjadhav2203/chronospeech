@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrastive Speech Analytics & Grounding Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --purple: #a855f7;
+      --pacing-color: #f59e0b;
+      --pitch-color: #a855f7;
+      --volume-color: #38bdf8;
+      --fluency-color: #ef4444;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.5; padding: 24px; max-width: 1200px; margin: 0 auto; }
+
+    header { margin-bottom: 24px; border-bottom: 1px solid var(--card-border); padding-bottom: 16px; }
+    header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+    header p { color: var(--text-muted); font-size: 0.9rem; margin-top: 4px; }
+
+    .selector-bar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      background: var(--card-bg);
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    .selector-group { display: flex; flex-direction: column; gap: 6px; }
+    .selector-group label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px; }
+    select {
+      background: #0f172a;
+      color: #fff;
+      border: 1px solid var(--card-border);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .variant-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill {
+      background: #0f172a;
+      color: var(--text-muted);
+      border: 1px solid var(--card-border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .pill:hover { border-color: var(--accent); color: #fff; }
+    .pill.active { background: var(--accent); color: #0f172a; border-color: var(--accent); font-weight: 600; }
+
+    .grid-top {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .overall-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .score-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 6px solid var(--accent);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 12px 0;
+    }
+    .score-val { font-size: 2.5rem; font-weight: 800; line-height: 1; }
+    .score-denom { font-size: 0.85rem; color: var(--text-muted); }
+    .grade-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .grade-excellent { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .grade-good { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+    .grade-moderate { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+    .grade-severe { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+    .dimension-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .dim-card {
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      padding: 14px;
+      border-radius: 6px;
+    }
+    .dim-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .dim-title { font-size: 0.9rem; font-weight: 600; }
+    .dim-score { font-size: 1.1rem; font-weight: 700; color: #fff; }
+    .bar-bg { width: 100%; height: 8px; background: #334155; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+    .bar-fill { height: 100%; border-radius: 4px; }
+    .sev-tag { font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; }
+    .sev-0 { background: #064e3b; color: #6ee7b7; }
+    .sev-1 { background: #1e3a8a; color: #93c5fd; }
+    .sev-2 { background: #78350f; color: #fcd34d; }
+    .sev-3 { background: #7f1d1d; color: #fca5a5; }
+
+    .timeline-card { margin-bottom: 24px; }
+    .player-row { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+    audio { flex: 1; height: 36px; border-radius: 4px; outline: none; }
+    canvas { width: 100%; height: 64px; background: #0f172a; border-radius: 6px; border: 1px solid var(--card-border); cursor: pointer; }
+    .timeline-legend { display: flex; gap: 16px; font-size: 0.8rem; margin-top: 8px; color: var(--text-muted); }
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+    .legend-box { width: 12px; height: 12px; border-radius: 2px; }
+
+    .section-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; color: #fff; }
+    .flaw-list { display: flex; flex-direction: column; gap: 12px; }
+    .flaw-item {
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 6px;
+    }
+    .flaw-item.flaw-pacing { border-left-color: var(--pacing-color); }
+    .flaw-item.flaw-pitch { border-left-color: var(--pitch-color); }
+    .flaw-item.flaw-volume { border-left-color: var(--volume-color); }
+    .flaw-item.flaw-fluency { border-left-color: var(--fluency-color); }
+
+    .flaw-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .flaw-badge-group { display: flex; align-items: center; gap: 8px; }
+    .flaw-type-name { font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .flaw-time { font-family: monospace; font-size: 0.85rem; background: #1e293b; padding: 2px 8px; border-radius: 4px; }
+    .play-btn {
+      background: #334155;
+      color: #fff;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+    .play-btn:hover { background: var(--accent); color: #0f172a; }
+
+    .flaw-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      background: #1e293b;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 0.85rem;
+    }
+    .flaw-phrase { font-style: italic; color: #e2e8f0; margin-bottom: 6px; font-size: 0.9rem; }
+    .flaw-explanation { font-size: 0.85rem; color: #cbd5e1; }
+
+    .transcript-box {
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      padding: 16px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      max-height: 180px;
+      overflow-y: auto;
+      line-height: 1.6;
+    }
+    .highlight-flaw { background: rgba(245, 158, 11, 0.3); color: #fde68a; padding: 1px 4px; border-radius: 3px; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contrastive Speech Analytics & Grounding Lab</h1>
+    <p>Track C Multimodal Evaluation Dashboard &middot; Real-time acoustic baseline contrastive scoring</p>
+  </header>
+
+  <div class="selector-bar">
+    <div class="selector-group">
+      <label for="speechSelect">Speech Passage</label>
+      <select id="speechSelect">
+        <option value="speech_001">Speech 001 — The True Measure of Character</option>
+      </select>
+    </div>
+    <div class="selector-group">
+      <label>Recording Variant</label>
+      <div class="variant-pills" id="variantPills">
+        <div class="pill active" data-ver="good">good (baseline)</div>
+        <div class="pill" data-ver="near_perfect">near_perfect</div>
+        <div class="pill" data-ver="mild_pacing">mild_pacing</div>
+        <div class="pill" data-ver="severe_pacing">severe_pacing</div>
+        <div class="pill" data-ver="flat_tone">flat_tone</div>
+        <div class="pill" data-ver="bad_pause">bad_pause</div>
+        <div class="pill" data-ver="low_volume">low_volume</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-top">
+    <div class="card overall-card">
+      <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted);">Overall Delivery Score</div>
+      <div class="score-circle">
+        <div class="score-val" id="overallScore">--</div>
+        <div class="score-denom">out of 100</div>
+      </div>
+      <div class="grade-badge" id="gradeBadge">Evaluating...</div>
+      <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;" id="iouSummary">Temporal IoU: --</div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">Four Delivery Dimensions</div>
+      <div class="dimension-grid">
+        <div class="dim-card">
+          <div class="dim-header">
+            <span class="dim-title" style="color: var(--pacing-color);">Pacing & Cadence</span>
+            <span class="dim-score" id="scorePacing">--/25</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" id="barPacing" style="background: var(--pacing-color); width: 0%;"></div></div>
+          <span class="sev-tag sev-0" id="sevPacing">Sev 0</span>
+        </div>
+
+        <div class="dim-card">
+          <div class="dim-header">
+            <span class="dim-title" style="color: var(--pitch-color);">Pitch Dynamics</span>
+            <span class="dim-score" id="scorePitch">--/25</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" id="barPitch" style="background: var(--pitch-color); width: 0%;"></div></div>
+          <span class="sev-tag sev-0" id="sevPitch">Sev 0</span>
+        </div>
+
+        <div class="dim-card">
+          <div class="dim-header">
+            <span class="dim-title" style="color: var(--volume-color);">Volume & Audibility</span>
+            <span class="dim-score" id="scoreVolume">--/25</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" id="barVolume" style="background: var(--volume-color); width: 0%;"></div></div>
+          <span class="sev-tag sev-0" id="sevVolume">Sev 0</span>
+        </div>
+
+        <div class="dim-card">
+          <div class="dim-header">
+            <span class="dim-title" style="color: var(--fluency-color);">Fluency & Pauses</span>
+            <span class="dim-score" id="scoreFluency">--/25</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" id="barFluency" style="background: var(--fluency-color); width: 0%;"></div></div>
+          <span class="sev-tag sev-0" id="sevFluency">Sev 0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card timeline-card">
+    <div class="section-title">Audio & Temporal Flaw Timeline</div>
+    <div class="player-row">
+      <audio id="audioPlayer" controls></audio>
+    </div>
+    <canvas id="timelineCanvas" width="1120" height="64"></canvas>
+    <div class="timeline-legend">
+      <div class="legend-item"><div class="legend-box" style="background: var(--pacing-color);"></div> Pacing Flaw</div>
+      <div class="legend-item"><div class="legend-box" style="background: var(--pitch-color);"></div> Pitch Flaw</div>
+      <div class="legend-item"><div class="legend-box" style="background: var(--volume-color);"></div> Volume Flaw</div>
+      <div class="legend-item"><div class="legend-box" style="background: var(--fluency-color);"></div> Fluency Flaw</div>
+      <div class="legend-item" style="margin-left: auto;">Click timeline or "Play Flaw" to seek audio</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom: 24px;">
+    <div class="section-title" id="flawsTitle">Detected Flaws & Causal Coaching Explanations</div>
+    <div class="flaw-list" id="flawList">
+      <div style="color: var(--text-muted); font-size: 0.9rem;">Loading evaluation...</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Speech Transcript</div>
+    <div class="transcript-box" id="transcriptBox">Loading transcript...</div>
+  </div>
+
+  <script>
+    let currentSpeech = 'speech_001';
+    let currentVersion = 'good';
+    let currentData = null;
+
+    const audioPlayer = document.getElementById('audioPlayer');
+    const timelineCanvas = document.getElementById('timelineCanvas');
+    const ctx = timelineCanvas.getContext('2d');
+
+    async function loadSpeeches() {
+      try {
+        const res = await fetch('/api/speeches');
+        const data = await res.json();
+        const select = document.getElementById('speechSelect');
+        select.innerHTML = '';
+        data.speeches.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.speech_id;
+          opt.textContent = `${s.speech_id.replace('_', ' ').toUpperCase()} — ${s.title} (${s.category})`;
+          select.appendChild(opt);
+        });
+        select.value = currentSpeech;
+      } catch (e) {
+        console.error('Failed to load speeches:', e);
+      }
+    }
+
+    async function evaluateCurrent() {
+      const flawsList = document.getElementById('flawList');
+      flawsList.innerHTML = '<div style="color: var(--text-muted); font-size: 0.9rem;">Evaluating acoustic features...</div>';
+
+      try {
+        const res = await fetch(`/api/evaluate?speech_id=${currentSpeech}&version=${currentVersion}`);
+        const data = await res.json();
+        currentData = data;
+        renderDashboard(data);
+      } catch (e) {
+        flawsList.innerHTML = `<div style="color: var(--danger);">Failed to load evaluation: ${e.message}</div>`;
+      }
+    }
+
+    function renderDashboard(data) {
+      // Overall Score
+      const ovScore = data.overall_score;
+      document.getElementById('overallScore').textContent = Math.round(ovScore);
+
+      const gradeBadge = document.getElementById('gradeBadge');
+      if (ovScore >= 90) {
+        gradeBadge.textContent = 'Excellent Delivery';
+        gradeBadge.className = 'grade-badge grade-excellent';
+      } else if (ovScore >= 75) {
+        gradeBadge.textContent = 'Good (Minor Irregularities)';
+        gradeBadge.className = 'grade-badge grade-good';
+      } else if (ovScore >= 55) {
+        gradeBadge.textContent = 'Moderate Delivery Flaw';
+        gradeBadge.className = 'grade-badge grade-moderate';
+      } else {
+        gradeBadge.textContent = 'Severe Delivery Breakdown';
+        gradeBadge.className = 'grade-badge grade-severe';
+      }
+
+      // Dimensions
+      const dims = data.dimension_scores;
+      const sevs = data.severities;
+      setDim('Pacing', dims.pacing, sevs.pacing);
+      setDim('Pitch', dims.pitch, sevs.pitch);
+      setDim('Volume', dims.volume, sevs.volume);
+      setDim('Fluency', dims.fluency, sevs.fluency);
+
+      // IoU
+      const iou = data.temporal_iou ? data.temporal_iou.target_flaw_iou : 1.0;
+      document.getElementById('iouSummary').textContent = `Target Temporal IoU: ${iou !== null && iou !== undefined ? iou.toFixed(3) : 'N/A'}`;
+
+      // Audio
+      if (data.audio_url) {
+        audioPlayer.src = data.audio_url;
+      }
+
+      // Flaws List
+      const flawList = document.getElementById('flawList');
+      flawList.innerHTML = '';
+      if (!data.detected_flaws || data.detected_flaws.length === 0) {
+        flawList.innerHTML = `
+          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid #065f46; color: #34d399; padding: 16px; border-radius: 6px; font-size: 0.9rem;">
+            No significant delivery flaws detected (Severity 0 across all dimensions). Reference delivery is within natural oratorical standards.
+          </div>
+        `;
+      } else {
+        data.detected_flaws.forEach((flaw, idx) => {
+          const item = document.createElement('div');
+          item.className = `flaw-item flaw-${flaw.flaw_type}`;
+          item.innerHTML = `
+            <div class="flaw-top">
+              <div class="flaw-badge-group">
+                <span class="flaw-type-name">${flaw.flaw_type}</span>
+                <span class="sev-tag sev-${flaw.severity}">Severity ${flaw.severity}</span>
+                <span class="flaw-time">${flaw.start_time.toFixed(2)}s – ${flaw.end_time.toFixed(2)}s (${flaw.duration.toFixed(2)}s)</span>
+              </div>
+              <button class="play-btn" onclick="playFlawInterval(${flaw.start_time}, ${flaw.end_time})">Play Segment</button>
+            </div>
+            <div class="flaw-phrase">"${flaw.affected_text}"</div>
+            <div class="flaw-details">
+              <div><strong>Baseline:</strong> ${typeof flaw.baseline_value === 'number' ? flaw.baseline_value.toFixed(2) : flaw.baseline_value}</div>
+              <div><strong>Participant:</strong> ${typeof flaw.participant_value === 'number' ? flaw.participant_value.toFixed(2) : flaw.participant_value}</div>
+              <div><strong>Delta:</strong> ${flaw.delta_percentage > 0 ? '+' : ''}${flaw.delta_percentage.toFixed(1)}%</div>
+            </div>
+            <div class="flaw-explanation">${flaw.causal_explanation}</div>
+          `;
+          flawList.appendChild(item);
+        });
+      }
+
+      // Transcript
+      const tBox = document.getElementById('transcriptBox');
+      let text = data.transcript_text || 'No transcript text available.';
+      if (data.detected_flaws && data.detected_flaws.length > 0) {
+        data.detected_flaws.forEach(f => {
+          if (f.affected_text && f.affected_text.length > 6) {
+            text = text.replace(f.affected_text, `<span class="highlight-flaw">${f.affected_text}</span>`);
+          }
+        });
+      }
+      tBox.innerHTML = text;
+
+      // Draw timeline
+      drawTimeline();
+    }
+
+    function setDim(name, score, sev) {
+      document.getElementById(`score${name}`).textContent = `${score.toFixed(1)}/25`;
+      document.getElementById(`bar${name}`).style.width = `${(score / 25) * 100}%`;
+      const sevTag = document.getElementById(`sev${name}`);
+      sevTag.textContent = `Sev ${sev}`;
+      sevTag.className = `sev-tag sev-${sev}`;
+    }
+
+    function playFlawInterval(st, et) {
+      if (!audioPlayer) return;
+      audioPlayer.currentTime = st;
+      audioPlayer.play();
+      const checkEnd = () => {
+        if (audioPlayer.currentTime >= et) {
+          audioPlayer.pause();
+          audioPlayer.removeEventListener('timeupdate', checkEnd);
+        }
+      };
+      audioPlayer.addEventListener('timeupdate', checkEnd);
+    }
+
+    function drawTimeline() {
+      const w = timelineCanvas.width;
+      const h = timelineCanvas.height;
+      ctx.clearRect(0, 0, w, h);
+
+      const totalDur = audioPlayer.duration && !isNaN(audioPlayer.duration) && audioPlayer.duration > 0
+        ? audioPlayer.duration
+        : 45.0;
+
+      // Track background
+      ctx.fillStyle = '#1e293b';
+      ctx.fillRect(0, 16, w, 32);
+
+      // Draw flaw highlights
+      if (currentData && currentData.detected_flaws) {
+        currentData.detected_flaws.forEach(f => {
+          const x1 = (f.start_time / totalDur) * w;
+          const x2 = (f.end_time / totalDur) * w;
+          const fWidth = Math.max(4, x2 - x1);
+
+          if (f.flaw_type === 'pacing') ctx.fillStyle = 'rgba(245, 158, 11, 0.7)';
+          else if (f.flaw_type === 'pitch') ctx.fillStyle = 'rgba(168, 85, 247, 0.7)';
+          else if (f.flaw_type === 'volume') ctx.fillStyle = 'rgba(56, 189, 248, 0.7)';
+          else ctx.fillStyle = 'rgba(239, 68, 68, 0.7)';
+
+          ctx.fillRect(x1, 16, fWidth, 32);
+
+          // Border
+          ctx.strokeStyle = '#fff';
+          ctx.lineWidth = 1;
+          ctx.strokeRect(x1, 16, fWidth, 32);
+        });
+      }
+
+      // Draw time tick marks
+      ctx.fillStyle = '#64748b';
+      ctx.font = '10px monospace';
+      for (let sec = 0; sec <= totalDur; sec += 10) {
+        const x = (sec / totalDur) * w;
+        ctx.fillRect(x, 48, 1, 6);
+        ctx.fillText(`${sec}s`, x + 2, 58);
+      }
+
+      // Draw playhead
+      if (audioPlayer.currentTime > 0) {
+        const curX = (audioPlayer.currentTime / totalDur) * w;
+        ctx.strokeStyle = '#38bdf8';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(curX, 8);
+        ctx.lineTo(curX, 54);
+        ctx.stroke();
+      }
+    }
+
+    audioPlayer.addEventListener('loadedmetadata', drawTimeline);
+    audioPlayer.addEventListener('timeupdate', drawTimeline);
+
+    timelineCanvas.addEventListener('click', (e) => {
+      const rect = timelineCanvas.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const totalDur = audioPlayer.duration || 45.0;
+      const targetTime = (clickX / rect.width) * totalDur;
+      audioPlayer.currentTime = targetTime;
+      audioPlayer.play();
+    });
+
+    // Event listeners
+    document.getElementById('speechSelect').addEventListener('change', (e) => {
+      currentSpeech = e.target.value;
+      evaluateCurrent();
+    });
+
+    document.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        currentVersion = pill.getAttribute('data-ver');
+        evaluateCurrent();
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await loadSpeeches();
+      await evaluateCurrent();
+    });
+  </script>
+</body>
+</html>

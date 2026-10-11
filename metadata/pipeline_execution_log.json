@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "total_speeches": 10,
+  "speeches_successfully_processed": [
+    "speech_001",
+    "speech_002",
+    "speech_003",
+    "speech_004",
+    "speech_005",
+    "speech_006",
+    "speech_007",
+    "speech_008",
+    "speech_009",
+    "speech_010"
+  ],
+  "total_audio_recordings_analyzed": 70,
+  "total_grounded_flaws": 60,
+  "errors_count": 0,
+  "errors_details": []
+}

@@ -1,0 +1,11 @@
+speech_id,title,category,transcript_file,speaker_id,language,expected_duration_seconds,source_type,license_note
+speech_001,The Power of Small Decisions,Persuasive Oratory,transcripts/speech_001.txt,speaker_tbd,en-US,42,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_002,The Architecture of Silence,Interpretive Reading,transcripts/speech_002.txt,speaker_tbd,en-US,41,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_003,Courage in the Crucible of Uncertainty,Declamation,transcripts/speech_003.txt,speaker_tbd,en-US,43,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_004,The Horizon of Human Curiosity,Extemporaneous Speech,transcripts/speech_004.txt,speaker_tbd,en-US,42,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_005,Bridges Over Cynicism,Persuasive Oratory,transcripts/speech_005.txt,speaker_tbd,en-US,44,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_006,Echoes of the Forgotten Valley,Interpretive Reading,transcripts/speech_006.txt,speaker_tbd,en-US,45,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_007,The Discipline of the Open Mind,Declamation,transcripts/speech_007.txt,speaker_tbd,en-US,42,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_008,Navigating the Unknown City,Extemporaneous Speech,transcripts/speech_008.txt,speaker_tbd,en-US,43,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_009,The Duty of Empathy in Modern Times,Persuasive Oratory,transcripts/speech_009.txt,speaker_tbd,en-US,44,original,CC-BY-4.0 (Original passage for Hackathon Track C)
+speech_010,Shadows and Lanterns: A Study in Perseverance,Interpretive Reading,transcripts/speech_010.txt,speaker_tbd,en-US,43,original,CC-BY-4.0 (Original passage for Hackathon Track C)

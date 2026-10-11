@@ -1,0 +1,5209 @@
+[
+  {
+    "speech_id": "speech_001",
+    "version": "good",
+    "overall_score": 98.32781408786055,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 23.327814087860546,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_001",
+    "version": "near_perfect",
+    "overall_score": 77.89940952693473,
+    "dimension_scores": {
+      "pacing": 21.69760393340585,
+      "pitch": 12.375484181540447,
+      "volume": 19.66160870693819,
+      "fluency": 24.164712705050242
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 4.38,
+        "duration": 4.38,
+        "affected_text": "We often wait for a monumental moment to redefine our",
+        "baseline_value": 3.5971223021582737,
+        "participant_value": 2.2831050228310503,
+        "delta": -1.3140172793272233,
+        "delta_percentage": -36.528664868413465,
+        "causal_explanation": "Speaking rate dragged / prolonged to 2.28 wps (-36.5% vs baseline 3.60 wps) over interval [0.00s - 4.38s] (4.38s) across phrase: \"We often wait for a monumental moment to redefine our\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 4.38,
+        "duration": 4.38,
+        "affected_text": "We often wait for a monumental moment to redefine our",
+        "baseline_value": 43.60506011872685,
+        "participant_value": 22.289853352274484,
+        "delta": -21.315206766452363,
+        "delta_percentage": -48.882303627405435,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 48.9% (22.29 Hz vs 43.61 Hz baseline) over interval [0.00s - 4.38s] (4.38s) across phrase: \"We often wait for a monumental moment to redefine our\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 36.69,
+        "end_time": 40.02,
+        "duration": 3.3300000000000054,
+        "affected_text": "greatness is never an accident of fate it",
+        "baseline_value": 0.030594013018714405,
+        "participant_value": 0.020991787314414978,
+        "delta": -0.009602225704299427,
+        "delta_percentage": -31.283708971012903,
+        "causal_explanation": "Localized vocal energy RMS dropped by 31.3% (0.0210 RMS vs 0.0306 RMS baseline) over interval [36.69s - 40.02s] (3.33s) across phrase: \"greatness is never an accident of fate it\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            0.0,
+            4.38
+          ],
+          "reference_interval": [
+            0.0,
+            4.38
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            4.38
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            36.69,
+            40.02
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_001",
+    "version": "mild_pacing",
+    "overall_score": 62.95978966649011,
+    "dimension_scores": {
+      "pacing": 4.410252802908965,
+      "pitch": 13.117143463759767,
+      "volume": 20.5705630174181,
+      "fluency": 24.86183038240328
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 8.11,
+        "end_time": 8.98,
+        "duration": 0.870000000000001,
+        "affected_text": "forged in grand gestures it is chiseled in the quiet",
+        "baseline_value": 2.6737967914438503,
+        "participant_value": 11.494252873563205,
+        "delta": 8.820456082119355,
+        "delta_percentage": 329.8727202315272,
+        "causal_explanation": "Speaking rate accelerated / rushed to 11.49 wps (+329.9% vs baseline 2.67 wps) over interval [8.11s - 8.98s] (0.87s) across phrase: \"forged in grand gestures it is chiseled in the quiet\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 0.5,
+        "end_time": 3.187,
+        "duration": 2.687,
+        "affected_text": "wait for a monumental moment to redefine our lives believing",
+        "baseline_value": 37.84545505669444,
+        "participant_value": 13.26815710127155,
+        "delta": -24.577297955422893,
+        "delta_percentage": -64.9410423987835,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 64.9% (13.27 Hz vs 37.85 Hz baseline) over interval [0.50s - 3.19s] (2.69s) across phrase: \"wait for a monumental moment to redefine our lives believing\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            8.11,
+            8.98
+          ],
+          "reference_interval": [
+            8.11,
+            8.98
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.5,
+            3.187
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_001",
+    "version": "severe_pacing",
+    "overall_score": 55.00000026286778,
+    "dimension_scores": {
+      "pacing": 2.7653023678628625,
+      "pitch": 8.387487185426934,
+      "volume": 19.532866983353937,
+      "fluency": 24.314343726224045
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 13.27,
+        "end_time": 13.87,
+        "duration": 0.5999999999999996,
+        "affected_text": "irritation and when you choose honesty in the dark you",
+        "baseline_value": 2.0920502092050204,
+        "participant_value": 16.666666666666675,
+        "delta": 14.574616457461655,
+        "delta_percentage": 696.6333675916962,
+        "causal_explanation": "Speaking rate accelerated / rushed to 16.67 wps (+696.6% vs baseline 2.09 wps) over interval [13.27s - 13.87s] (0.60s) across phrase: \"irritation and when you choose honesty in the dark you\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 13.27,
+        "end_time": 13.87,
+        "duration": 0.5999999999999996,
+        "affected_text": "irritation and when you choose honesty in the dark you",
+        "baseline_value": 47.86113876060248,
+        "participant_value": 6.032243704335741,
+        "delta": -41.82889505626674,
+        "delta_percentage": -87.39618141831018,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 87.4% (6.03 Hz vs 47.86 Hz baseline) over interval [13.27s - 13.87s] (0.60s) across phrase: \"irritation and when you choose honesty in the dark you\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 23.211,
+        "duration": 23.211,
+        "affected_text": "Entire passage delivery (volume shift)",
+        "baseline_value": 0.030594013018714405,
+        "participant_value": 0.046274325484764546,
+        "delta": 0.01568031246605014,
+        "delta_percentage": 51.08589892266521,
+        "causal_explanation": "Mean vocal energy RMS elevated by 51.1% (0.0463 RMS vs 0.0306 RMS baseline) across entire passage."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.07272727272727282,
+      "mean_iou": 0.07272727272727282,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            13.27,
+            13.87
+          ],
+          "reference_interval": [
+            12.77,
+            13.35
+          ],
+          "iou": 0.07272727272727282
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            13.27,
+            13.87
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            23.211
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_001",
+    "version": "flat_tone",
+    "overall_score": 48.38625507725743,
+    "dimension_scores": {
+      "pacing": 4.302032379550669,
+      "pitch": 5.031830235897602,
+      "volume": 15.306136439715157,
+      "fluency": 23.746256022094002
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 2,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 16.09,
+        "end_time": 17.17,
+        "duration": 1.0800000000000018,
+        "affected_text": "irritation and when you choose honesty in the dark you",
+        "baseline_value": 2.0920502092050204,
+        "participant_value": 9.259259259259244,
+        "delta": 7.167209050054224,
+        "delta_percentage": 342.57621744939786,
+        "causal_explanation": "Speaking rate accelerated / rushed to 9.26 wps (+342.6% vs baseline 2.09 wps) over interval [16.09s - 17.17s] (1.08s) across phrase: \"irritation and when you choose honesty in the dark you\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 2,
+        "start_time": 16.09,
+        "end_time": 17.17,
+        "duration": 1.0800000000000018,
+        "affected_text": "irritation and when you choose honesty in the dark you",
+        "baseline_value": 47.86113876060248,
+        "participant_value": 4.0467508931438685,
+        "delta": -43.81438786745861,
+        "delta_percentage": -91.54461731885829,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 91.5% (4.05 Hz vs 47.86 Hz baseline) over interval [16.09s - 17.17s] (1.08s) across phrase: \"irritation and when you choose honesty in the dark you\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 16.84,
+        "end_time": 17.42,
+        "duration": 0.5800000000000018,
+        "affected_text": "you choose honesty in the dark you set",
+        "baseline_value": 0.030594013018714405,
+        "participant_value": 0.007031288463622332,
+        "delta": -0.023562724555092073,
+        "delta_percentage": -76.76651645624075,
+        "causal_explanation": "Localized vocal energy RMS dropped by 76.8% (0.0070 RMS vs 0.0306 RMS baseline) over interval [16.84s - 17.42s] (0.58s) across phrase: \"you choose honesty in the dark you set\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.09,
+            17.17
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": "pitch",
+          "predicted_interval": [
+            16.09,
+            17.17
+          ],
+          "reference_interval": [
+            16.09,
+            17.17
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.84,
+            17.42
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_001",
+    "version": "bad_pause",
+    "overall_score": 58.88990023805059,
+    "dimension_scores": {
+      "pacing": 19.385805323666823,
+      "pitch": 9.68427552828009,
+      "volume": 21.66649527846319,
+      "fluency": 8.153324107640492
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 3
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 6.21,
+        "duration": 6.21,
+        "affected_text": "We often wait for a monumental moment to redefine our",
+        "baseline_value": 3.5971223021582737,
+        "participant_value": 1.6103059581320451,
+        "delta": -1.9868163440262285,
+        "delta_percentage": -55.23195891547129,
+        "causal_explanation": "Speaking rate dragged / prolonged to 1.61 wps (-55.2% vs baseline 3.60 wps) over interval [0.00s - 6.21s] (6.21s) across phrase: \"We often wait for a monumental moment to redefine our\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 26.76,
+        "end_time": 33.62,
+        "duration": 6.859999999999996,
+        "affected_text": "ease when you choose patience over irritation and when you",
+        "baseline_value": 54.1693283936008,
+        "participant_value": 21.675228258670945,
+        "delta": -32.49410013492985,
+        "delta_percentage": -59.986049509004005,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 60.0% (21.68 Hz vs 54.17 Hz baseline) over interval [26.76s - 33.62s] (6.86s) across phrase: \"ease when you choose patience over irritation and when you\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 3,
+        "start_time": 17.312,
+        "end_time": 19.072,
+        "duration": 1.76,
+        "affected_text": "Unnatural silence gap between \"quiet\" and \"choices\"",
+        "baseline_value": 0.48133333333333334,
+        "participant_value": 1.76,
+        "delta": 1.2786666666666666,
+        "delta_percentage": 265.59579034826555,
+        "causal_explanation": "Longest silence interval reached 1.76s (+265.6% longer than baseline average pause of 0.48s) between 17.31s and 19.07s (Unnatural silence gap between \"quiet\" and \"choices\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            6.21
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            26.76,
+            33.62
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            17.312,
+            19.072
+          ],
+          "reference_interval": [
+            17.312,
+            19.072
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_001",
+    "version": "low_volume",
+    "overall_score": 51.22709693161654,
+    "dimension_scores": {
+      "pacing": 5.167795766417038,
+      "pitch": 7.691029179127315,
+      "volume": 15.006378459506339,
+      "fluency": 23.36189352656585
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 27.5,
+        "end_time": 28.46,
+        "duration": 0.9600000000000009,
+        "affected_text": "never an accident of fate it is the deliberate accumulation",
+        "baseline_value": 2.8901734104046235,
+        "participant_value": 10.416666666666657,
+        "delta": 7.526493256262034,
+        "delta_percentage": 260.4076565617494,
+        "causal_explanation": "Speaking rate accelerated / rushed to 10.42 wps (+260.4% vs baseline 2.89 wps) over interval [27.50s - 28.46s] (0.96s) across phrase: \"never an accident of fate it is the deliberate accumulation\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 1.926,
+        "end_time": 4.73,
+        "duration": 2.8040000000000003,
+        "affected_text": "moment to redefine our lives believing transformation arrives like thunder",
+        "baseline_value": 50.78062636268108,
+        "participant_value": 12.437437314842509,
+        "delta": -38.34318904783858,
+        "delta_percentage": -75.50736626724802,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 75.5% (12.44 Hz vs 50.78 Hz baseline) over interval [1.93s - 4.73s] (2.80s) across phrase: \"moment to redefine our lives believing transformation arrives like thunder\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 28.25,
+        "end_time": 28.62,
+        "duration": 0.370000000000001,
+        "affected_text": "of fate it is the deliberate accumulation of",
+        "baseline_value": 0.030594013018714405,
+        "participant_value": 0.015082389116287231,
+        "delta": -0.015511623902427173,
+        "delta_percentage": -50.53631759708189,
+        "causal_explanation": "Localized vocal energy RMS dropped by 50.5% (0.0151 RMS vs 0.0306 RMS baseline) over interval [28.25s - 28.62s] (0.37s) across phrase: \"of fate it is the deliberate accumulation of\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            27.5,
+            28.46
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            1.926,
+            4.73
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            28.25,
+            28.62
+          ],
+          "reference_interval": [
+            28.25,
+            28.62
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "good",
+    "overall_score": 97.86718381498717,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 22.867183814987172,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "near_perfect",
+    "overall_score": 79.0062612261784,
+    "dimension_scores": {
+      "pacing": 12.048484269928705,
+      "pitch": 19.48095368362141,
+      "volume": 22.76398352766187,
+      "fluency": 24.712839744966413
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 24.85,
+        "end_time": 26.482,
+        "duration": 1.631999999999998,
+        "affected_text": "discover a sanctuary where insight can finally breathe and where",
+        "baseline_value": 2.2573363431151243,
+        "participant_value": 6.127450980392164,
+        "delta": 3.87011463727704,
+        "delta_percentage": 171.43848370654464,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.13 wps (+171.4% vs baseline 2.26 wps) over interval [24.85s - 26.48s] (1.63s) across phrase: \"discover a sanctuary where insight can finally breathe and where\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            24.85,
+            26.482
+          ],
+          "reference_interval": [
+            24.85,
+            26.482
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "mild_pacing",
+    "overall_score": 72.10735410416534,
+    "dimension_scores": {
+      "pacing": 5.238801917531177,
+      "pitch": 19.481516041484678,
+      "volume": 23.009733718936523,
+      "fluency": 24.377302426212964
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 21.55,
+        "end_time": 22.59,
+        "duration": 1.0399999999999991,
+        "affected_text": "stillness without anxiety we discover a sanctuary where insight can",
+        "baseline_value": 2.4330900243309004,
+        "participant_value": 9.615384615384624,
+        "delta": 7.182294591053724,
+        "delta_percentage": 295.18017578708316,
+        "causal_explanation": "Speaking rate accelerated / rushed to 9.62 wps (+295.2% vs baseline 2.43 wps) over interval [21.55s - 22.59s] (1.04s) across phrase: \"stillness without anxiety we discover a sanctuary where insight can\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            21.55,
+            22.59
+          ],
+          "reference_interval": [
+            21.55,
+            22.59
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "severe_pacing",
+    "overall_score": 62.070661022927965,
+    "dimension_scores": {
+      "pacing": 4.339959177558894,
+      "pitch": 10.606128452521283,
+      "volume": 22.997352366566084,
+      "fluency": 24.1272210262817
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 22.815,
+        "end_time": 23.64,
+        "duration": 0.8249999999999993,
+        "affected_text": "and where our restless intentions finally align with our deepest",
+        "baseline_value": 2.644802962179321,
+        "participant_value": 12.121212121212132,
+        "delta": 9.47640915903281,
+        "delta_percentage": 358.2894833776636,
+        "causal_explanation": "Speaking rate accelerated / rushed to 12.12 wps (+358.3% vs baseline 2.64 wps) over interval [22.82s - 23.64s] (0.82s) across phrase: \"and where our restless intentions finally align with our deepest\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 10.98,
+        "end_time": 12.33,
+        "duration": 1.3499999999999996,
+        "affected_text": "Yet the greatest symphonies draw their power not from the",
+        "baseline_value": 53.95194304222827,
+        "participant_value": 9.768129405125515,
+        "delta": -44.18381363710276,
+        "delta_percentage": -81.89460703558544,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 81.9% (9.77 Hz vs 53.95 Hz baseline) over interval [10.98s - 12.33s] (1.35s) across phrase: \"Yet the greatest symphonies draw their power not from the\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            22.815,
+            23.64
+          ],
+          "reference_interval": [
+            22.815,
+            23.64
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            10.98,
+            12.33
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "flat_tone",
+    "overall_score": 58.95340995296708,
+    "dimension_scores": {
+      "pacing": 8.562335730781395,
+      "pitch": 11.020087183556255,
+      "volume": 17.044877299226638,
+      "fluency": 22.326109739402796
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 21.9,
+        "end_time": 23.49,
+        "duration": 1.5899999999999999,
+        "affected_text": "sanctuary where insight can finally breathe and where our restless",
+        "baseline_value": 2.1413276231263376,
+        "participant_value": 6.289308176100629,
+        "delta": 4.147980552974292,
+        "delta_percentage": 193.70164595703326,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.29 wps (+193.7% vs baseline 2.14 wps) over interval [21.90s - 23.49s] (1.59s) across phrase: \"sanctuary where insight can finally breathe and where our restless\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 12.221,
+        "end_time": 14.721,
+        "duration": 2.5,
+        "affected_text": "of what the stillness might reveal Yet the greatest symphonies",
+        "baseline_value": 61.13382139611259,
+        "participant_value": 22.61183460716575,
+        "delta": -38.52198678894683,
+        "delta_percentage": -63.01245840152565,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 63.0% (22.61 Hz vs 61.13 Hz baseline) over interval [12.22s - 14.72s] (2.50s) across phrase: \"of what the stillness might reveal Yet the greatest symphonies\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 23.24,
+        "end_time": 25.24,
+        "duration": 2.0,
+        "affected_text": "restless intentions finally align with our deepest truths",
+        "baseline_value": 0.029333889103182256,
+        "participant_value": 0.01580963283777237,
+        "delta": -0.013524256265409887,
+        "delta_percentage": -45.94790793020861,
+        "causal_explanation": "Localized vocal energy RMS dropped by 45.9% (0.0158 RMS vs 0.0293 RMS baseline) over interval [23.24s - 25.24s] (2.00s) across phrase: \"restless intentions finally align with our deepest truths\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            21.9,
+            23.49
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": "pitch",
+          "predicted_interval": [
+            12.221,
+            14.721
+          ],
+          "reference_interval": [
+            12.221,
+            14.721
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            23.24,
+            25.24
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "bad_pause",
+    "overall_score": 61.43463512206401,
+    "dimension_scores": {
+      "pacing": 18.96200415407672,
+      "pitch": 12.346134423857546,
+      "volume": 21.11965029090837,
+      "fluency": 9.006846253221365
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 3
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 42.81,
+        "end_time": 45.18,
+        "duration": 2.3699999999999974,
+        "affected_text": "and where our restless intentions finally align with our deepest",
+        "baseline_value": 2.644802962179321,
+        "participant_value": 4.219409282700426,
+        "delta": 1.5746063205211054,
+        "delta_percentage": 59.53361401295708,
+        "causal_explanation": "Speaking rate accelerated / rushed to 4.22 wps (+59.5% vs baseline 2.64 wps) over interval [42.81s - 45.18s] (2.37s) across phrase: \"and where our restless intentions finally align with our deepest\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 42.81,
+        "end_time": 45.18,
+        "duration": 2.3699999999999974,
+        "affected_text": "and where our restless intentions finally align with our deepest",
+        "baseline_value": 49.707988783475336,
+        "participant_value": 18.026290796563444,
+        "delta": -31.681697986911892,
+        "delta_percentage": -63.73549810960337,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 63.7% (18.03 Hz vs 49.71 Hz baseline) over interval [42.81s - 45.18s] (2.37s) across phrase: \"and where our restless intentions finally align with our deepest\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 3,
+        "start_time": 16.08,
+        "end_time": 17.632,
+        "duration": 1.552,
+        "affected_text": "Unnatural silence gap between \"chatter\" and \"fearful\"",
+        "baseline_value": 0.41890909090909095,
+        "participant_value": 1.552,
+        "delta": 1.1330909090909091,
+        "delta_percentage": 270.42155735393027,
+        "causal_explanation": "Longest silence interval reached 1.55s (+270.4% longer than baseline average pause of 0.42s) between 16.08s and 17.63s (Unnatural silence gap between \"chatter\" and \"fearful\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            42.81,
+            45.18
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            42.81,
+            45.18
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            16.08,
+            17.632
+          ],
+          "reference_interval": [
+            16.08,
+            17.632
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_002",
+    "version": "low_volume",
+    "overall_score": 63.64200860787823,
+    "dimension_scores": {
+      "pacing": 18.9867259538282,
+      "pitch": 6.021792456744951,
+      "volume": 14.788642335808117,
+      "fluency": 23.844847861496966
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 2,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 21.23,
+        "end_time": 23.49,
+        "duration": 2.259999999999998,
+        "affected_text": "brass but from the breath held between the notes When",
+        "baseline_value": 2.493765586034914,
+        "participant_value": 4.424778761061951,
+        "delta": 1.931013175027037,
+        "delta_percentage": 77.43052335459761,
+        "causal_explanation": "Speaking rate accelerated / rushed to 4.42 wps (+77.4% vs baseline 2.49 wps) over interval [21.23s - 23.49s] (2.26s) across phrase: \"brass but from the breath held between the notes When\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 2,
+        "start_time": 30.36,
+        "end_time": 32.94,
+        "duration": 2.5799999999999983,
+        "affected_text": "and where our restless intentions finally align with our deepest",
+        "baseline_value": 49.707988783475336,
+        "participant_value": 9.243043743708968,
+        "delta": -40.46494503976637,
+        "delta_percentage": -81.40515161632666,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 81.4% (9.24 Hz vs 49.71 Hz baseline) over interval [30.36s - 32.94s] (2.58s) across phrase: \"and where our restless intentions finally align with our deepest\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 10.65,
+        "end_time": 13.47,
+        "duration": 2.8200000000000003,
+        "affected_text": "to fill every pause with chatter fearful of",
+        "baseline_value": 0.029333889103182256,
+        "participant_value": 0.013437083922326565,
+        "delta": -0.01589680518085569,
+        "delta_percentage": -54.00851081937725,
+        "causal_explanation": "Localized vocal energy RMS dropped by 54.0% (0.0134 RMS vs 0.0293 RMS baseline) over interval [10.65s - 13.47s] (2.82s) across phrase: \"to fill every pause with chatter fearful of\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            21.23,
+            23.49
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            30.36,
+            32.94
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            10.65,
+            13.47
+          ],
+          "reference_interval": [
+            10.65,
+            13.47
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "good",
+    "overall_score": 97.69807229936197,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 22.698072299361975,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "near_perfect",
+    "overall_score": 82.07195024102644,
+    "dimension_scores": {
+      "pacing": 18.580214932569696,
+      "pitch": 17.380254109525655,
+      "volume": 22.59653424010429,
+      "fluency": 23.514946958826798
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 3.54,
+        "end_time": 6.65,
+        "duration": 3.1100000000000003,
+        "affected_text": "before taking their first step Every revolution of thought every",
+        "baseline_value": 1.869158878504673,
+        "participant_value": 3.215434083601286,
+        "delta": 1.346275205096613,
+        "delta_percentage": 72.0218703026076,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.22 wps (+72.0% vs baseline 1.87 wps) over interval [3.54s - 6.65s] (3.11s) across phrase: \"before taking their first step Every revolution of thought every\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            3.54,
+            6.65
+          ],
+          "reference_interval": [
+            9.51,
+            11.67
+          ],
+          "iou": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "mild_pacing",
+    "overall_score": 68.94618962345636,
+    "dimension_scores": {
+      "pacing": 16.328657633008287,
+      "pitch": 17.40922648280958,
+      "volume": 11.293695282497787,
+      "fluency": 23.91461022514071
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 2.81,
+        "end_time": 5.62,
+        "duration": 2.81,
+        "affected_text": "to dissolve before taking their first step Every revolution of",
+        "baseline_value": 1.8248175182481754,
+        "participant_value": 3.5587188612099645,
+        "delta": 1.733901342961789,
+        "delta_percentage": 95.01258690454367,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.56 wps (+95.0% vs baseline 1.82 wps) over interval [2.81s - 5.62s] (2.81s) across phrase: \"to dissolve before taking their first step Every revolution of\"."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 24.97,
+        "end_time": 26.97,
+        "duration": 2.0,
+        "affected_text": "ahead matters far more than the comfort left",
+        "baseline_value": 0.022944402750491158,
+        "participant_value": 0.0016648255987092853,
+        "delta": -0.021279577151781873,
+        "delta_percentage": -92.34163012243106,
+        "causal_explanation": "Localized vocal energy RMS dropped by 92.3% (0.0017 RMS vs 0.0229 RMS baseline) over interval [24.97s - 26.97s] (2.00s) across phrase: \"ahead matters far more than the comfort left\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            2.81,
+            5.62
+          ],
+          "reference_interval": [
+            26.72,
+            29.22
+          ],
+          "iou": 0.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            24.97,
+            26.97
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "severe_pacing",
+    "overall_score": 61.43887609789569,
+    "dimension_scores": {
+      "pacing": 9.913324399326182,
+      "pitch": 10.402117886485435,
+      "volume": 19.091529995987717,
+      "fluency": 22.031903816096357
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 17.39,
+        "end_time": 18.6,
+        "duration": 1.2100000000000009,
+        "affected_text": "the conviction that the purpose ahead matters far more than",
+        "baseline_value": 2.9559562518474736,
+        "participant_value": 8.26446280991735,
+        "delta": 5.308506558069876,
+        "delta_percentage": 179.58070164436722,
+        "causal_explanation": "Speaking rate accelerated / rushed to 8.26 wps (+179.6% vs baseline 2.96 wps) over interval [17.39s - 18.60s] (1.21s) across phrase: \"the conviction that the purpose ahead matters far more than\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 15.99,
+        "end_time": 17.07,
+        "duration": 1.08,
+        "affected_text": "the absence of fear it demands the conviction that the",
+        "baseline_value": 44.404199082505976,
+        "participant_value": 11.405011850527966,
+        "delta": -32.99918723197801,
+        "delta_percentage": -74.31529809909497,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 74.3% (11.41 Hz vs 44.40 Hz baseline) over interval [15.99s - 17.07s] (1.08s) across phrase: \"the absence of fear it demands the conviction that the\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 24.747,
+        "duration": 24.747,
+        "affected_text": "Entire passage delivery (volume shift)",
+        "baseline_value": 0.022944402750491158,
+        "participant_value": 0.03996404805194805,
+        "delta": 0.017019645301456894,
+        "delta_percentage": 73.85587505015354,
+        "causal_explanation": "Mean vocal energy RMS elevated by 73.9% (0.0400 RMS vs 0.0229 RMS baseline) across entire passage."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            17.39,
+            18.6
+          ],
+          "reference_interval": [
+            15.99,
+            17.07
+          ],
+          "iou": 0.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            15.99,
+            17.07
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            24.747
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "flat_tone",
+    "overall_score": 70.22588857544702,
+    "dimension_scores": {
+      "pacing": 5.2500363623140975,
+      "pitch": 21.97345820893081,
+      "volume": 20.84514989565088,
+      "fluency": 22.15724410855122
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 16.35,
+        "end_time": 16.833,
+        "duration": 0.482999999999997,
+        "affected_text": "of fear it demands the conviction that the purpose ahead",
+        "baseline_value": 3.300330033003299,
+        "participant_value": 20.703933747412137,
+        "delta": 17.40360371440884,
+        "delta_percentage": 527.3132149561749,
+        "causal_explanation": "Speaking rate accelerated / rushed to 20.70 wps (+527.3% vs baseline 3.30 wps) over interval [16.35s - 16.83s] (0.48s) across phrase: \"of fear it demands the conviction that the purpose ahead\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.35,
+            16.833
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "bad_pause",
+    "overall_score": 71.34137070537544,
+    "dimension_scores": {
+      "pacing": 18.38937652365333,
+      "pitch": 12.758534540221762,
+      "volume": 21.718055240385652,
+      "fluency": 18.47540440111469
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 1
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 8.76,
+        "end_time": 14.1,
+        "duration": 5.34,
+        "affected_text": "revolution of thought every voyage into the uncharted wilderness began",
+        "baseline_value": 5.405405405405406,
+        "participant_value": 1.8726591760299627,
+        "delta": -3.5327462293754435,
+        "delta_percentage": -65.3545961834163,
+        "causal_explanation": "Speaking rate dragged / prolonged to 1.87 wps (-65.4% vs baseline 5.41 wps) over interval [8.76s - 14.10s] (5.34s) across phrase: \"revolution of thought every voyage into the uncharted wilderness began\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 37.26,
+        "end_time": 43.89,
+        "duration": 6.630000000000003,
+        "affected_text": "the comfort left behind Stand resolute meet the storm with",
+        "baseline_value": 41.62470764317313,
+        "participant_value": 18.796165171205786,
+        "delta": -22.828542471967346,
+        "delta_percentage": -54.84359872041702,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 54.8% (18.80 Hz vs 41.62 Hz baseline) over interval [37.26s - 43.89s] (6.63s) across phrase: \"the comfort left behind Stand resolute meet the storm with\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 1,
+        "start_time": 45.008,
+        "end_time": 46.416,
+        "duration": 1.408,
+        "affected_text": "Unnatural silence gap between \"focus\" and \"who\"",
+        "baseline_value": 0.4455384615384616,
+        "participant_value": 1.408,
+        "delta": 0.9624615384615383,
+        "delta_percentage": 215.9736247043998,
+        "causal_explanation": "Longest silence interval reached 1.41s (+216.0% longer than baseline average pause of 0.45s) between 45.01s and 46.42s (Unnatural silence gap between \"focus\" and \"who\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            8.76,
+            14.1
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            37.26,
+            43.89
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            45.008,
+            46.416
+          ],
+          "reference_interval": [
+            45.008,
+            46.416
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_003",
+    "version": "low_volume",
+    "overall_score": 79.12533577729826,
+    "dimension_scores": {
+      "pacing": 21.67842788972349,
+      "pitch": 16.4157650221994,
+      "volume": 17.184313015492535,
+      "fluency": 23.846829849882837
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 7.23,
+        "end_time": 10.36,
+        "duration": 3.129999999999999,
+        "affected_text": "revolution of thought every voyage into the uncharted wilderness began",
+        "baseline_value": 5.405405405405406,
+        "participant_value": 3.194888178913739,
+        "delta": -2.210517226491667,
+        "delta_percentage": -40.89381215457097,
+        "causal_explanation": "Speaking rate dragged / prolonged to 3.19 wps (-40.9% vs baseline 5.41 wps) over interval [7.23s - 10.36s] (3.13s) across phrase: \"revolution of thought every voyage into the uncharted wilderness began\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 11.79,
+        "end_time": 14.19,
+        "duration": 2.4000000000000004,
+        "affected_text": "of the unknown When doubt surrounds you remember that certainty",
+        "baseline_value": 50.361984583091434,
+        "participant_value": 15.776387140441361,
+        "delta": -34.58559744265007,
+        "delta_percentage": -68.6738798224048,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 68.7% (15.78 Hz vs 50.36 Hz baseline) over interval [11.79s - 14.19s] (2.40s) across phrase: \"of the unknown When doubt surrounds you remember that certainty\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 11.46,
+        "end_time": 13.44,
+        "duration": 1.9799999999999986,
+        "affected_text": "fog of the unknown When doubt surrounds you",
+        "baseline_value": 0.022944402750491158,
+        "participant_value": 0.01193696167320013,
+        "delta": -0.011007441077291027,
+        "delta_percentage": -47.76622417370491,
+        "causal_explanation": "Localized vocal energy RMS dropped by 47.8% (0.0119 RMS vs 0.0229 RMS baseline) over interval [11.46s - 13.44s] (1.98s) across phrase: \"fog of the unknown When doubt surrounds you\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            7.23,
+            10.36
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            11.79,
+            14.19
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            11.46,
+            13.44
+          ],
+          "reference_interval": [
+            11.46,
+            13.44
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "good",
+    "overall_score": 98.14668964220678,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 23.14668964220678,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "near_perfect",
+    "overall_score": 77.13649009521032,
+    "dimension_scores": {
+      "pacing": 12.683288069478502,
+      "pitch": 19.52819048680993,
+      "volume": 21.677045749813402,
+      "fluency": 23.247965789108484
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 4.266,
+        "end_time": 7.41,
+        "duration": 3.144,
+        "affected_text": "dared to build ships with neither map nor guarantee They",
+        "baseline_value": 1.297016861219196,
+        "participant_value": 3.1806615776081424,
+        "delta": 1.8836447163889465,
+        "delta_percentage": 145.2178113403334,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.18 wps (+145.2% vs baseline 1.30 wps) over interval [4.27s - 7.41s] (3.14s) across phrase: \"dared to build ships with neither map nor guarantee They\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            4.266,
+            7.41
+          ],
+          "reference_interval": [
+            1.08,
+            4.266
+          ],
+          "iou": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "mild_pacing",
+    "overall_score": 63.53327398415121,
+    "dimension_scores": {
+      "pacing": 4.583406429542563,
+      "pitch": 17.539749248947974,
+      "volume": 19.43340791249371,
+      "fluency": 21.97671039316696
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 24.51,
+        "end_time": 25.87,
+        "duration": 1.3599999999999994,
+        "affected_text": "curiosity nor complacency to dull our wonder The future belongs",
+        "baseline_value": 1.9723865877712017,
+        "participant_value": 7.352941176470591,
+        "delta": 5.38055458869939,
+        "delta_percentage": 272.78028768647357,
+        "causal_explanation": "Speaking rate accelerated / rushed to 7.35 wps (+272.8% vs baseline 1.97 wps) over interval [24.51s - 25.87s] (1.36s) across phrase: \"curiosity nor complacency to dull our wonder The future belongs\"."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 24.51,
+        "end_time": 25.26,
+        "duration": 0.75,
+        "affected_text": "curiosity nor complacency to dull our wonder The",
+        "baseline_value": 0.02181657429718875,
+        "participant_value": 0.015763750299811363,
+        "delta": -0.006052823997377388,
+        "delta_percentage": -27.617564293128545,
+        "causal_explanation": "Localized vocal energy RMS dropped by 27.6% (0.0158 RMS vs 0.0218 RMS baseline) over interval [24.51s - 25.26s] (0.75s) across phrase: \"curiosity nor complacency to dull our wonder The\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.16666666666666638,
+      "mean_iou": 0.16666666666666638,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            24.51,
+            25.87
+          ],
+          "reference_interval": [
+            25.51,
+            26.67
+          ],
+          "iou": 0.16666666666666638
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            24.51,
+            25.26
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "severe_pacing",
+    "overall_score": 62.62152444132387,
+    "dimension_scores": {
+      "pacing": 3.0483860357001875,
+      "pitch": 15.809881979375046,
+      "volume": 22.044302580854815,
+      "fluency": 21.718953845393827
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 3.03,
+        "end_time": 5.19,
+        "duration": 2.1600000000000006,
+        "affected_text": "dared to build ships with neither map nor guarantee They",
+        "baseline_value": 1.297016861219196,
+        "participant_value": 4.629629629629628,
+        "delta": 3.3326127684104323,
+        "delta_percentage": 256.92463555504304,
+        "causal_explanation": "Speaking rate accelerated / rushed to 4.63 wps (+256.9% vs baseline 1.30 wps) over interval [3.03s - 5.19s] (2.16s) across phrase: \"dared to build ships with neither map nor guarantee They\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 2.0,
+        "end_time": 4.75,
+        "duration": 2.75,
+        "affected_text": "across barren oceans and dared to build ships with neither",
+        "baseline_value": 45.33634505988558,
+        "participant_value": 26.249162855803007,
+        "delta": -19.087182204082573,
+        "delta_percentage": -42.10118852254523,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 42.1% (26.25 Hz vs 45.34 Hz baseline) over interval [2.00s - 4.75s] (2.75s) across phrase: \"across barren oceans and dared to build ships with neither\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            3.03,
+            5.19
+          ],
+          "reference_interval": [
+            3.03,
+            5.19
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.0,
+            4.75
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "flat_tone",
+    "overall_score": 52.99032421081003,
+    "dimension_scores": {
+      "pacing": 4.671121880619269,
+      "pitch": 9.599649270920604,
+      "volume": 14.191639308691443,
+      "fluency": 24.52791375057871
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 1.801,
+        "end_time": 2.74,
+        "duration": 0.9390000000000003,
+        "affected_text": "ancestors looked across barren oceans and dared to build ships",
+        "baseline_value": 1.923076923076923,
+        "participant_value": 10.64962726304579,
+        "delta": 8.726550339968867,
+        "delta_percentage": 453.75702231322083,
+        "causal_explanation": "Speaking rate accelerated / rushed to 10.65 wps (+453.8% vs baseline 1.92 wps) over interval [1.80s - 2.74s] (0.94s) across phrase: \"ancestors looked across barren oceans and dared to build ships\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 0.801,
+        "end_time": 1.74,
+        "duration": 0.939,
+        "affected_text": "a moment why our ancestors looked across barren oceans and",
+        "baseline_value": 26.856435325961503,
+        "participant_value": 6.13369482886328,
+        "delta": -20.722740497098222,
+        "delta_percentage": -77.16088559296067,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 77.2% (6.13 Hz vs 26.86 Hz baseline) over interval [0.80s - 1.74s] (0.94s) across phrase: \"a moment why our ancestors looked across barren oceans and\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 30.08,
+        "end_time": 32.08,
+        "duration": 2.0,
+        "affected_text": "must guide our conscience We cannot allow cynicism",
+        "baseline_value": 0.02181657429718875,
+        "participant_value": 0.0025187665596604347,
+        "delta": -0.019297807737528316,
+        "delta_percentage": -88.05120488197672,
+        "causal_explanation": "Localized vocal energy RMS dropped by 88.1% (0.0025 RMS vs 0.0218 RMS baseline) over interval [30.08s - 32.08s] (2.00s) across phrase: \"must guide our conscience We cannot allow cynicism\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            1.801,
+            2.74
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": "pitch",
+          "predicted_interval": [
+            0.801,
+            1.74
+          ],
+          "reference_interval": [
+            0.801,
+            1.74
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            30.08,
+            32.08
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "bad_pause",
+    "overall_score": 70.06452482768753,
+    "dimension_scores": {
+      "pacing": 17.61560463859791,
+      "pitch": 17.100578449073023,
+      "volume": 22.02821282260164,
+      "fluency": 13.320128917414964
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 2
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 36.12,
+        "end_time": 39.573,
+        "duration": 3.453000000000003,
+        "affected_text": "cynicism to blind our curiosity nor complacency to dull our",
+        "baseline_value": 1.5290519877675843,
+        "participant_value": 2.8960324355632756,
+        "delta": 1.3669804477956913,
+        "delta_percentage": 89.39467487410143,
+        "causal_explanation": "Speaking rate accelerated / rushed to 2.90 wps (+89.4% vs baseline 1.53 wps) over interval [36.12s - 39.57s] (3.45s) across phrase: \"cynicism to blind our curiosity nor complacency to dull our\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 7.77,
+        "end_time": 14.41,
+        "duration": 6.640000000000001,
+        "affected_text": "build ships with neither map nor guarantee They were compelled",
+        "baseline_value": 38.08579942373392,
+        "participant_value": 21.040082224413652,
+        "delta": -17.045717199320265,
+        "delta_percentage": -44.75597913462408,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 44.8% (21.04 Hz vs 38.09 Hz baseline) over interval [7.77s - 14.41s] (6.64s) across phrase: \"build ships with neither map nor guarantee They were compelled\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 2,
+        "start_time": 5.696,
+        "end_time": 7.12,
+        "duration": 1.424,
+        "affected_text": "Unnatural silence gap between \"oceans\" and \"and\"",
+        "baseline_value": 0.4234666666666667,
+        "participant_value": 1.424,
+        "delta": 1.0005333333333333,
+        "delta_percentage": 236.2162587550169,
+        "causal_explanation": "Longest silence interval reached 1.42s (+236.2% longer than baseline average pause of 0.42s) between 5.70s and 7.12s (Unnatural silence gap between \"oceans\" and \"and\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            36.12,
+            39.573
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            7.77,
+            14.41
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            5.696,
+            7.12
+          ],
+          "reference_interval": [
+            5.696,
+            7.12
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_004",
+    "version": "low_volume",
+    "overall_score": 51.101892820757925,
+    "dimension_scores": {
+      "pacing": 4.5395487040042095,
+      "pitch": 10.725894269513049,
+      "volume": 11.858913374139185,
+      "fluency": 23.977536473101484
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 18.69,
+        "end_time": 19.05,
+        "duration": 0.35999999999999943,
+        "affected_text": "minds and deep space that identical flame must guide our",
+        "baseline_value": 2.148227712137486,
+        "participant_value": 27.77777777777782,
+        "delta": 25.629550065640334,
+        "delta_percentage": 1193.0000214045613,
+        "causal_explanation": "Speaking rate accelerated / rushed to 27.78 wps (+1193.0% vs baseline 2.15 wps) over interval [18.69s - 19.05s] (0.36s) across phrase: \"minds and deep space that identical flame must guide our\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 19.19,
+        "end_time": 19.99,
+        "duration": 0.7999999999999972,
+        "affected_text": "deep space that identical flame must guide our conscience We",
+        "baseline_value": 31.508766204380315,
+        "participant_value": 5.0329229148141685,
+        "delta": -26.475843289566146,
+        "delta_percentage": -84.02664544586347,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 84.0% (5.03 Hz vs 31.51 Hz baseline) over interval [19.19s - 19.99s] (0.80s) across phrase: \"deep space that identical flame must guide our conscience We\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 19.69,
+        "end_time": 19.99,
+        "duration": 0.29999999999999716,
+        "affected_text": "that identical flame must guide our conscience We",
+        "baseline_value": 0.02181657429718875,
+        "participant_value": 0.0023824411910027266,
+        "delta": -0.019434133106186025,
+        "delta_percentage": -88.67322439473969,
+        "causal_explanation": "Localized vocal energy RMS dropped by 88.7% (0.0024 RMS vs 0.0218 RMS baseline) over interval [19.69s - 19.99s] (0.30s) across phrase: \"that identical flame must guide our conscience We\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            18.69,
+            19.05
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            19.19,
+            19.99
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            19.69,
+            19.99
+          ],
+          "reference_interval": [
+            19.69,
+            19.99
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "good",
+    "overall_score": 98.50106233259173,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 23.501062332591733,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "near_perfect",
+    "overall_score": 91.60819172106491,
+    "dimension_scores": {
+      "pacing": 21.72938489663884,
+      "pitch": 23.403590587306955,
+      "volume": 21.6555163428577,
+      "fluency": 24.819699894261426
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 1.65,
+        "end_time": 5.617,
+        "duration": 3.967,
+        "affected_text": "it costs nothing It requires neither imagination nor vulnerability to",
+        "baseline_value": 1.8832391713747647,
+        "participant_value": 2.5207965717166623,
+        "delta": 0.6375574003418976,
+        "delta_percentage": 33.85250039038403,
+        "causal_explanation": "Speaking rate accelerated / rushed to 2.52 wps (+33.9% vs baseline 1.88 wps) over interval [1.65s - 5.62s] (3.97s) across phrase: \"it costs nothing It requires neither imagination nor vulnerability to\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            1.65,
+            5.617
+          ],
+          "reference_interval": [
+            11.593,
+            14.4
+          ],
+          "iou": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "mild_pacing",
+    "overall_score": 85.96323995794381,
+    "dimension_scores": {
+      "pacing": 18.005055078680016,
+      "pitch": 23.396954435032495,
+      "volume": 20.10714924597699,
+      "fluency": 24.454081198254304
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 18.008,
+        "end_time": 20.6,
+        "duration": 2.5920000000000023,
+        "affected_text": "citizen who chooses to build bridges where others build barricades",
+        "baseline_value": 2.1929824561403515,
+        "participant_value": 3.8580246913580214,
+        "delta": 1.66504223521767,
+        "delta_percentage": 75.92246386157363,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.86 wps (+75.9% vs baseline 2.19 wps) over interval [18.01s - 20.60s] (2.59s) across phrase: \"citizen who chooses to build bridges where others build barricades\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            18.008,
+            20.6
+          ],
+          "reference_interval": [
+            18.008,
+            20.6
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "severe_pacing",
+    "overall_score": 72.75943290542111,
+    "dimension_scores": {
+      "pacing": 10.389304997982505,
+      "pitch": 19.77807483395375,
+      "volume": 18.672681870764173,
+      "fluency": 23.91937120272069
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 14.25,
+        "end_time": 15.49,
+        "duration": 1.2400000000000002,
+        "affected_text": "despite the heat to the teachers who show up each",
+        "baseline_value": 2.9761904761904767,
+        "participant_value": 8.064516129032256,
+        "delta": 5.08832565284178,
+        "delta_percentage": 170.961997612364,
+        "causal_explanation": "Speaking rate accelerated / rushed to 8.06 wps (+171.0% vs baseline 2.98 wps) over interval [14.25s - 15.49s] (1.24s) across phrase: \"despite the heat to the teachers who show up each\"."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 13.25,
+        "end_time": 14.28,
+        "duration": 1.0299999999999994,
+        "affected_text": "pick up the hammer despite the heat to",
+        "baseline_value": 0.06822544659377629,
+        "participant_value": 0.03947484865784645,
+        "delta": -0.028750597935929836,
+        "delta_percentage": -42.07890232589963,
+        "causal_explanation": "Localized vocal energy RMS dropped by 42.1% (0.0395 RMS vs 0.0682 RMS baseline) over interval [13.25s - 14.28s] (1.03s) across phrase: \"pick up the hammer despite the heat to\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            14.25,
+            15.49
+          ],
+          "reference_interval": [
+            14.25,
+            15.49
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            13.25,
+            14.28
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "flat_tone",
+    "overall_score": 76.00712802765185,
+    "dimension_scores": {
+      "pacing": 14.684651512028143,
+      "pitch": 22.241726273269077,
+      "volume": 14.814245133742482,
+      "fluency": 24.266505108612144
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 15.11,
+        "end_time": 16.63,
+        "duration": 1.5199999999999996,
+        "affected_text": "pick up the hammer despite the heat to the teachers",
+        "baseline_value": 2.8985507246376816,
+        "participant_value": 6.578947368421055,
+        "delta": 3.6803966437833733,
+        "delta_percentage": 126.96930376954629,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.58 wps (+127.0% vs baseline 2.90 wps) over interval [15.11s - 16.63s] (1.52s) across phrase: \"pick up the hammer despite the heat to the teachers\"."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 15.11,
+        "end_time": 16.29,
+        "duration": 1.1799999999999997,
+        "affected_text": "pick up the hammer despite the heat to",
+        "baseline_value": 0.06822544659377629,
+        "participant_value": 0.029651526361703873,
+        "delta": -0.038573920232072414,
+        "delta_percentage": -56.45615529073773,
+        "causal_explanation": "Localized vocal energy RMS dropped by 56.5% (0.0297 RMS vs 0.0682 RMS baseline) over interval [15.11s - 16.29s] (1.18s) across phrase: \"pick up the hammer despite the heat to\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            15.11,
+            16.63
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            15.11,
+            16.29
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "bad_pause",
+    "overall_score": 65.73753676964826,
+    "dimension_scores": {
+      "pacing": 19.251665083744737,
+      "pitch": 16.273142737100255,
+      "volume": 15.63541003637227,
+      "fluency": 14.577318912430998
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 2
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 2.76,
+        "end_time": 14.01,
+        "duration": 11.25,
+        "affected_text": "it costs nothing It requires neither imagination nor vulnerability to",
+        "baseline_value": 1.8832391713747647,
+        "participant_value": 0.8888888888888888,
+        "delta": -0.9943502824858759,
+        "delta_percentage": -52.79719646886751,
+        "causal_explanation": "Speaking rate dragged / prolonged to 0.89 wps (-52.8% vs baseline 1.88 wps) over interval [2.76s - 14.01s] (11.25s) across phrase: \"it costs nothing It requires neither imagination nor vulnerability to\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 54.21,
+        "end_time": 57.66,
+        "duration": 3.4499999999999957,
+        "affected_text": "world will not arrive uninvited we must construct it together",
+        "baseline_value": 68.3096034073863,
+        "participant_value": 37.53117050403486,
+        "delta": -30.778432903351444,
+        "delta_percentage": -45.057190074146014,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 45.1% (37.53 Hz vs 68.31 Hz baseline) over interval [54.21s - 57.66s] (3.45s) across phrase: \"world will not arrive uninvited we must construct it together\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 54.815,
+        "end_time": 57.66,
+        "duration": 2.844999999999999,
+        "affected_text": "not arrive uninvited we must construct it together",
+        "baseline_value": 0.06822544659377629,
+        "participant_value": 0.034483253955841064,
+        "delta": -0.03374219263793522,
+        "delta_percentage": -49.38451824332279,
+        "causal_explanation": "Localized vocal energy RMS dropped by 49.4% (0.0345 RMS vs 0.0682 RMS baseline) over interval [54.81s - 57.66s] (2.84s) across phrase: \"not arrive uninvited we must construct it together\", causing diminished vocal audibility."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 2,
+        "start_time": 3.04,
+        "end_time": 4.448,
+        "duration": 1.408,
+        "affected_text": "Unnatural silence gap between \"it\" and \"nothing\"",
+        "baseline_value": 0.44184615384615394,
+        "participant_value": 1.408,
+        "delta": 0.9661538461538459,
+        "delta_percentage": 218.6134753624701,
+        "causal_explanation": "Longest silence interval reached 1.41s (+218.6% longer than baseline average pause of 0.44s) between 3.04s and 4.45s (Unnatural silence gap between \"it\" and \"nothing\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.76,
+            14.01
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            54.21,
+            57.66
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            54.815,
+            57.66
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            3.04,
+            4.448
+          ],
+          "reference_interval": [
+            3.04,
+            4.448
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_005",
+    "version": "low_volume",
+    "overall_score": 71.11037144611045,
+    "dimension_scores": {
+      "pacing": 21.76977359393025,
+      "pitch": 13.882427703266801,
+      "volume": 11.153705682415751,
+      "fluency": 24.304464466497652
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 16.71,
+        "end_time": 19.24,
+        "duration": 2.5299999999999976,
+        "affected_text": "builders who pick up the hammer despite the heat to",
+        "baseline_value": 2.8490028490028494,
+        "participant_value": 3.952569169960478,
+        "delta": 1.1035663209576287,
+        "delta_percentage": 38.73381830859013,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.95 wps (+38.7% vs baseline 2.85 wps) over interval [16.71s - 19.24s] (2.53s) across phrase: \"builders who pick up the hammer despite the heat to\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 1.5,
+        "end_time": 6.97,
+        "duration": 5.47,
+        "affected_text": "seductive because it costs nothing It requires neither imagination nor",
+        "baseline_value": 49.539561110102035,
+        "participant_value": 20.644057532616152,
+        "delta": -28.895503577485883,
+        "delta_percentage": -58.32802027705749,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 58.3% (20.64 Hz vs 49.54 Hz baseline) over interval [1.50s - 6.97s] (5.47s) across phrase: \"seductive because it costs nothing It requires neither imagination nor\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 6.72,
+        "end_time": 9.33,
+        "duration": 2.6100000000000003,
+        "affected_text": "nor vulnerability to declare that nothing will ever",
+        "baseline_value": 0.06822544659377629,
+        "participant_value": 0.019512256607413292,
+        "delta": -0.048713189986362995,
+        "delta_percentage": -71.29582375946042,
+        "causal_explanation": "Localized vocal energy RMS dropped by 71.3% (0.0195 RMS vs 0.0682 RMS baseline) over interval [6.72s - 9.33s] (2.61s) across phrase: \"nor vulnerability to declare that nothing will ever\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.71,
+            19.24
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            1.5,
+            6.97
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            6.72,
+            9.33
+          ],
+          "reference_interval": [
+            6.72,
+            9.33
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "good",
+    "overall_score": 99.61053097062552,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 24.61053097062552,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "near_perfect",
+    "overall_score": 77.9979715908104,
+    "dimension_scores": {
+      "pacing": 16.64615171400427,
+      "pitch": 13.118696924824322,
+      "volume": 23.500995420848653,
+      "fluency": 24.73212753113315
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 27.81,
+        "end_time": 30.42,
+        "duration": 2.610000000000003,
+        "affected_text": "and fade but the mountain keeps its silent vigil through",
+        "baseline_value": 1.9607843137254897,
+        "participant_value": 3.8314176245210683,
+        "delta": 1.8706333107955786,
+        "delta_percentage": 95.39743358146188,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.83 wps (+95.4% vs baseline 1.96 wps) over interval [27.81s - 30.42s] (2.61s) across phrase: \"and fade but the mountain keeps its silent vigil through\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 2.9,
+        "end_time": 7.2,
+        "duration": 4.300000000000001,
+        "affected_text": "wind there lies a meadow untouched by time The stones",
+        "baseline_value": 61.008056674699425,
+        "participant_value": 39.010760065738936,
+        "delta": -21.99729660896049,
+        "delta_percentage": -36.05632067569572,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 36.1% (39.01 Hz vs 61.01 Hz baseline) over interval [2.90s - 7.20s] (4.30s) across phrase: \"wind there lies a meadow untouched by time The stones\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            27.81,
+            30.42
+          ],
+          "reference_interval": [
+            27.81,
+            30.42
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.9,
+            7.2
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "mild_pacing",
+    "overall_score": 69.14359825090301,
+    "dimension_scores": {
+      "pacing": 9.255722637181819,
+      "pitch": 13.391034883475243,
+      "volume": 22.091578215628658,
+      "fluency": 24.405262514617284
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 20.4,
+        "end_time": 21.88,
+        "duration": 1.4800000000000004,
+        "affected_text": "of the earth whispering that empires may rise and fade",
+        "baseline_value": 2.4875621890547266,
+        "participant_value": 6.756756756756755,
+        "delta": 4.269194567702028,
+        "delta_percentage": 171.61472270976856,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.76 wps (+171.6% vs baseline 2.49 wps) over interval [20.40s - 21.88s] (1.48s) across phrase: \"of the earth whispering that empires may rise and fade\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 19.83,
+        "end_time": 21.67,
+        "duration": 1.8400000000000034,
+        "affected_text": "It is the voice of the earth whispering that empires",
+        "baseline_value": 66.47201425475471,
+        "participant_value": 37.27328508253811,
+        "delta": -29.198729172216602,
+        "delta_percentage": -43.926283223536906,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 43.9% (37.27 Hz vs 66.47 Hz baseline) over interval [19.83s - 21.67s] (1.84s) across phrase: \"It is the voice of the earth whispering that empires\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            20.4,
+            21.88
+          ],
+          "reference_interval": [
+            20.4,
+            21.88
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            19.83,
+            21.67
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "severe_pacing",
+    "overall_score": 78.25078231673422,
+    "dimension_scores": {
+      "pacing": 9.072231893583538,
+      "pitch": 22.368020101364703,
+      "volume": 22.501671704557832,
+      "fluency": 24.308858617228147
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 18.6,
+        "end_time": 20.11,
+        "duration": 1.509999999999998,
+        "affected_text": "of the earth whispering that empires may rise and fade",
+        "baseline_value": 2.4875621890547266,
+        "participant_value": 6.6225165562914,
+        "delta": 4.1349543672366735,
+        "delta_percentage": 166.21848357987434,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.62 wps (+166.2% vs baseline 2.49 wps) over interval [18.60s - 20.11s] (1.51s) across phrase: \"of the earth whispering that empires may rise and fade\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            18.6,
+            20.11
+          ],
+          "reference_interval": [
+            18.6,
+            20.11
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "flat_tone",
+    "overall_score": 77.49729803046982,
+    "dimension_scores": {
+      "pacing": 10.420226947029047,
+      "pitch": 20.951700516366063,
+      "volume": 21.51544427634824,
+      "fluency": 24.609926290726467
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 22.139,
+        "end_time": 23.65,
+        "duration": 1.5109999999999992,
+        "affected_text": "of the earth whispering that empires may rise and fade",
+        "baseline_value": 2.4875621890547266,
+        "participant_value": 6.6181336863004665,
+        "delta": 4.1305714972457395,
+        "delta_percentage": 166.0422992888473,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.62 wps (+166.0% vs baseline 2.49 wps) over interval [22.14s - 23.65s] (1.51s) across phrase: \"of the earth whispering that empires may rise and fade\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            22.139,
+            23.65
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "bad_pause",
+    "overall_score": 77.0787013069313,
+    "dimension_scores": {
+      "pacing": 17.443066726563945,
+      "pitch": 21.620435614361398,
+      "volume": 21.074264422846724,
+      "fluency": 16.94093454315923
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 1
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 42.882,
+        "end_time": 45.04,
+        "duration": 2.1580000000000013,
+        "affected_text": "of the earth whispering that empires may rise and fade",
+        "baseline_value": 2.4875621890547266,
+        "participant_value": 4.6339202965708965,
+        "delta": 2.14635810751617,
+        "delta_percentage": 86.28012746102608,
+        "causal_explanation": "Speaking rate accelerated / rushed to 4.63 wps (+86.3% vs baseline 2.49 wps) over interval [42.88s - 45.04s] (2.16s) across phrase: \"of the earth whispering that empires may rise and fade\"."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 1,
+        "start_time": 6.496,
+        "end_time": 7.696,
+        "duration": 1.2,
+        "affected_text": "Unnatural silence gap between \"wind\" and \"lies\"",
+        "baseline_value": 0.48533333333333334,
+        "participant_value": 1.2,
+        "delta": 0.7146666666666666,
+        "delta_percentage": 147.22241296436172,
+        "causal_explanation": "Longest silence interval reached 1.20s (+147.2% longer than baseline average pause of 0.49s) between 6.50s and 7.70s (Unnatural silence gap between \"wind\" and \"lies\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            42.882,
+            45.04
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            6.496,
+            7.696
+          ],
+          "reference_interval": [
+            6.496,
+            7.696
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_006",
+    "version": "low_volume",
+    "overall_score": 64.17484124468139,
+    "dimension_scores": {
+      "pacing": 17.325743461219364,
+      "pitch": 8.97220334296765,
+      "volume": 15.53655818830935,
+      "fluency": 22.340336252185026
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 25.89,
+        "end_time": 28.55,
+        "duration": 2.66,
+        "affected_text": "but the mountain keeps its silent vigil through all human",
+        "baseline_value": 2.10970464135021,
+        "participant_value": 3.7593984962406015,
+        "delta": 1.6496938548903914,
+        "delta_percentage": 78.19178243131734,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.76 wps (+78.2% vs baseline 2.11 wps) over interval [25.89s - 28.55s] (2.66s) across phrase: \"but the mountain keeps its silent vigil through all human\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 17.13,
+        "end_time": 20.48,
+        "duration": 3.3500000000000014,
+        "affected_text": "stretch like reaching hands across the granite the cold air",
+        "baseline_value": 65.13537566707869,
+        "participant_value": 22.129920437695368,
+        "delta": -43.00545522938332,
+        "delta_percentage": -66.0246275765197,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 66.0% (22.13 Hz vs 65.14 Hz baseline) over interval [17.13s - 20.48s] (3.35s) across phrase: \"stretch like reaching hands across the granite the cold air\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 17.13,
+        "end_time": 19.98,
+        "duration": 2.8500000000000014,
+        "affected_text": "stretch like reaching hands across the granite the",
+        "baseline_value": 0.04942598563447725,
+        "participant_value": 0.024407828226685524,
+        "delta": -0.025018157407791723,
+        "delta_percentage": -50.51521355362076,
+        "causal_explanation": "Localized vocal energy RMS dropped by 50.5% (0.0244 RMS vs 0.0494 RMS baseline) over interval [17.13s - 19.98s] (2.85s) across phrase: \"stretch like reaching hands across the granite the\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            25.89,
+            28.55
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            17.13,
+            20.48
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            17.13,
+            19.98
+          ],
+          "reference_interval": [
+            17.13,
+            19.98
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "good",
+    "overall_score": 97.35820059534419,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 22.358200595344186,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "near_perfect",
+    "overall_score": 78.92619799292666,
+    "dimension_scores": {
+      "pacing": 21.117469125831576,
+      "pitch": 14.221230853707256,
+      "volume": 19.738346503296487,
+      "fluency": 23.84915151009134
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 28.05,
+        "end_time": 32.07,
+        "duration": 4.02,
+        "affected_text": "The measure of wisdom is not how fiercely you cling",
+        "baseline_value": 4.149377593360995,
+        "participant_value": 2.4875621890547266,
+        "delta": -1.6618154043062687,
+        "delta_percentage": -40.04878606803685,
+        "causal_explanation": "Speaking rate dragged / prolonged to 2.49 wps (-40.0% vs baseline 4.15 wps) over interval [28.05s - 32.07s] (4.02s) across phrase: \"The measure of wisdom is not how fiercely you cling\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 2.01,
+        "end_time": 7.227,
+        "duration": 5.2170000000000005,
+        "affected_text": "that confirm our pride and effortless to dismiss perspectives that",
+        "baseline_value": 57.4087799160159,
+        "participant_value": 30.69279481363898,
+        "delta": -26.715985102376923,
+        "delta_percentage": -46.53632877258716,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 46.5% (30.69 Hz vs 57.41 Hz baseline) over interval [2.01s - 7.23s] (5.22s) across phrase: \"that confirm our pride and effortless to dismiss perspectives that\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 5.67,
+        "end_time": 9.06,
+        "duration": 3.3900000000000006,
+        "affected_text": "to dismiss perspectives that disrupt our peace But",
+        "baseline_value": 0.07020384288354897,
+        "participant_value": 0.04718591272830963,
+        "delta": -0.02301793015523934,
+        "delta_percentage": -32.74064291672669,
+        "causal_explanation": "Localized vocal energy RMS dropped by 32.7% (0.0472 RMS vs 0.0702 RMS baseline) over interval [5.67s - 9.06s] (3.39s) across phrase: \"to dismiss perspectives that disrupt our peace But\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            28.05,
+            32.07
+          ],
+          "reference_interval": [
+            28.05,
+            32.07
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.01,
+            7.227
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            5.67,
+            9.06
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "mild_pacing",
+    "overall_score": 74.14276538289761,
+    "dimension_scores": {
+      "pacing": 12.445815800817202,
+      "pitch": 19.230308599263342,
+      "volume": 19.065102775003705,
+      "fluency": 23.401538207813356
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 7.6,
+        "end_time": 9.2,
+        "duration": 1.5999999999999996,
+        "affected_text": "effortless to defend beliefs that confirm our pride and effortless",
+        "baseline_value": 2.4875621890547266,
+        "participant_value": 6.250000000000002,
+        "delta": 3.762437810945275,
+        "delta_percentage": 151.24391999441627,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.25 wps (+151.2% vs baseline 2.49 wps) over interval [7.60s - 9.20s] (1.60s) across phrase: \"effortless to defend beliefs that confirm our pride and effortless\"."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 7.85,
+        "end_time": 8.95,
+        "duration": 1.0999999999999996,
+        "affected_text": "to defend beliefs that confirm our pride and",
+        "baseline_value": 0.07020384288354897,
+        "participant_value": 0.03790617734193802,
+        "delta": -0.032297665541610954,
+        "delta_percentage": -45.94011396376822,
+        "causal_explanation": "Localized vocal energy RMS dropped by 45.9% (0.0379 RMS vs 0.0702 RMS baseline) over interval [7.85s - 8.95s] (1.10s) across phrase: \"to defend beliefs that confirm our pride and\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            7.6,
+            9.2
+          ],
+          "reference_interval": [
+            7.6,
+            9.2
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            7.85,
+            8.95
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "severe_pacing",
+    "overall_score": 79.89916054050778,
+    "dimension_scores": {
+      "pacing": 12.529375252817577,
+      "pitch": 20.59860329568891,
+      "volume": 22.257495193115297,
+      "fluency": 24.51368679888599
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 9.39,
+        "end_time": 10.63,
+        "duration": 1.2400000000000002,
+        "affected_text": "genuinely learn one must cultivate the courage to be proven",
+        "baseline_value": 3.278688524590165,
+        "participant_value": 8.064516129032256,
+        "delta": 4.785827604442091,
+        "delta_percentage": 145.96329005513704,
+        "causal_explanation": "Speaking rate accelerated / rushed to 8.06 wps (+146.0% vs baseline 3.28 wps) over interval [9.39s - 10.63s] (1.24s) across phrase: \"genuinely learn one must cultivate the courage to be proven\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            9.39,
+            10.63
+          ],
+          "reference_interval": [
+            9.39,
+            10.63
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "flat_tone",
+    "overall_score": 69.60163551842818,
+    "dimension_scores": {
+      "pacing": 18.887301090171977,
+      "pitch": 12.434578615306885,
+      "volume": 14.357653987027655,
+      "fluency": 23.92210182592166
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 5.13,
+        "end_time": 7.63,
+        "duration": 2.5,
+        "affected_text": "disrupt our peace But intellect without humility quickly decays into",
+        "baseline_value": 2.2522522522522523,
+        "participant_value": 4.0,
+        "delta": 1.7477477477477477,
+        "delta_percentage": 77.59655471297073,
+        "causal_explanation": "Speaking rate accelerated / rushed to 4.00 wps (+77.6% vs baseline 2.25 wps) over interval [5.13s - 7.63s] (2.50s) across phrase: \"disrupt our peace But intellect without humility quickly decays into\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 16.59,
+        "end_time": 20.92,
+        "duration": 4.330000000000002,
+        "affected_text": "scrutinize our own assumptions with unyielding honesty and hold truth",
+        "baseline_value": 57.82843847745335,
+        "participant_value": 34.40916934771993,
+        "delta": -23.419269129733422,
+        "delta_percentage": -40.497771076929965,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 40.5% (34.41 Hz vs 57.83 Hz baseline) over interval [16.59s - 20.92s] (4.33s) across phrase: \"scrutinize our own assumptions with unyielding honesty and hold truth\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 20.16,
+        "end_time": 23.31,
+        "duration": 3.1499999999999986,
+        "affected_text": "and hold truth higher than tribal allegiance The",
+        "baseline_value": 0.07020384288354897,
+        "participant_value": 0.029443131759762764,
+        "delta": -0.04076071112378621,
+        "delta_percentage": -57.97792759536928,
+        "causal_explanation": "Localized vocal energy RMS dropped by 58.0% (0.0294 RMS vs 0.0702 RMS baseline) over interval [20.16s - 23.31s] (3.15s) across phrase: \"and hold truth higher than tribal allegiance The\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            5.13,
+            7.63
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": "pitch",
+          "predicted_interval": [
+            16.59,
+            20.92
+          ],
+          "reference_interval": [
+            12.84,
+            15.19
+          ],
+          "iou": 0.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            20.16,
+            23.31
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "bad_pause",
+    "overall_score": 64.59812924695615,
+    "dimension_scores": {
+      "pacing": 18.24980564290844,
+      "pitch": 11.413012743239062,
+      "volume": 22.099631494765614,
+      "fluency": 12.835679366043035
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 2
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 8.25,
+        "end_time": 18.07,
+        "duration": 9.82,
+        "affected_text": "perspectives that disrupt our peace But intellect without humility quickly",
+        "baseline_value": 2.74649821477616,
+        "participant_value": 1.0183299389002036,
+        "delta": -1.7281682758759562,
+        "delta_percentage": -62.92031599593816,
+        "causal_explanation": "Speaking rate dragged / prolonged to 1.02 wps (-62.9% vs baseline 2.75 wps) over interval [8.25s - 18.07s] (9.82s) across phrase: \"perspectives that disrupt our peace But intellect without humility quickly\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 41.25,
+        "end_time": 46.59,
+        "duration": 5.340000000000003,
+        "affected_text": "The measure of wisdom is not how fiercely you cling",
+        "baseline_value": 50.803101219136906,
+        "participant_value": 23.010043950390607,
+        "delta": -27.7930572687463,
+        "delta_percentage": -54.70729521327292,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 54.7% (23.01 Hz vs 50.80 Hz baseline) over interval [41.25s - 46.59s] (5.34s) across phrase: \"The measure of wisdom is not how fiercely you cling\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 2,
+        "start_time": 13.728,
+        "end_time": 15.136,
+        "duration": 1.408,
+        "affected_text": "Unnatural silence gap between \"But\" and \"without\"",
+        "baseline_value": 0.4133333333333334,
+        "participant_value": 1.408,
+        "delta": 0.9946666666666666,
+        "delta_percentage": 240.58695476900746,
+        "causal_explanation": "Longest silence interval reached 1.41s (+240.6% longer than baseline average pause of 0.41s) between 13.73s and 15.14s (Unnatural silence gap between \"But\" and \"without\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            8.25,
+            18.07
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            41.25,
+            46.59
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            13.728,
+            15.136
+          ],
+          "reference_interval": [
+            13.728,
+            15.136
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_007",
+    "version": "low_volume",
+    "overall_score": 49.134526018256395,
+    "dimension_scores": {
+      "pacing": 5.507841490566776,
+      "pitch": 9.282939141733614,
+      "volume": 11.989396777444236,
+      "fluency": 22.354348608511774
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 16.112,
+        "end_time": 17.2,
+        "duration": 1.088000000000001,
+        "affected_text": "must welcome rigorous debate scrutinize our own assumptions with unyielding",
+        "baseline_value": 2.3523876734885905,
+        "participant_value": 9.191176470588227,
+        "delta": 6.838788797099636,
+        "delta_percentage": 290.7045539141187,
+        "causal_explanation": "Speaking rate accelerated / rushed to 9.19 wps (+290.7% vs baseline 2.35 wps) over interval [16.11s - 17.20s] (1.09s) across phrase: \"must welcome rigorous debate scrutinize our own assumptions with unyielding\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 16.112,
+        "end_time": 17.2,
+        "duration": 1.088000000000001,
+        "affected_text": "must welcome rigorous debate scrutinize our own assumptions with unyielding",
+        "baseline_value": 49.734723840226565,
+        "participant_value": 15.740343146820061,
+        "delta": -33.994380693406505,
+        "delta_percentage": -68.3512639003481,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 68.4% (15.74 Hz vs 49.73 Hz baseline) over interval [16.11s - 17.20s] (1.09s) across phrase: \"must welcome rigorous debate scrutinize our own assumptions with unyielding\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 14.96,
+        "end_time": 15.612,
+        "duration": 0.6519999999999992,
+        "affected_text": "one must cultivate the courage to be proven",
+        "baseline_value": 0.07020384288354897,
+        "participant_value": 0.02178073860704899,
+        "delta": -0.048423104276499984,
+        "delta_percentage": -68.87689533089653,
+        "causal_explanation": "Localized vocal energy RMS dropped by 68.9% (0.0218 RMS vs 0.0702 RMS baseline) over interval [14.96s - 15.61s] (0.65s) across phrase: \"one must cultivate the courage to be proven\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.112,
+            17.2
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.112,
+            17.2
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            14.96,
+            15.612
+          ],
+          "reference_interval": [
+            14.96,
+            15.612
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "good",
+    "overall_score": 97.92083768972607,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 22.920837689726074,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "near_perfect",
+    "overall_score": 83.9235079059775,
+    "dimension_scores": {
+      "pacing": 19.503219253611505,
+      "pitch": 17.979167293518152,
+      "volume": 21.98982151056621,
+      "fluency": 24.451299848281632
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 16.829,
+        "end_time": 19.42,
+        "duration": 2.591000000000001,
+        "affected_text": "of modern life When familiar landmarks vanish you must rely",
+        "baseline_value": 2.3923444976076556,
+        "participant_value": 3.859513701273638,
+        "delta": 1.4671692036659825,
+        "delta_percentage": 61.325109323668336,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.86 wps (+61.3% vs baseline 2.39 wps) over interval [16.83s - 19.42s] (2.59s) across phrase: \"of modern life When familiar landmarks vanish you must rely\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            16.829,
+            19.42
+          ],
+          "reference_interval": [
+            16.829,
+            19.42
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "mild_pacing",
+    "overall_score": 66.63689891803185,
+    "dimension_scores": {
+      "pacing": 5.9722340925601465,
+      "pitch": 17.05705235357898,
+      "volume": 19.173117106917097,
+      "fluency": 24.434495364975625
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 17.58,
+        "end_time": 18.52,
+        "duration": 0.9400000000000013,
+        "affected_text": "that disorienting moment you realize that adaptability is the greatest",
+        "baseline_value": 2.298850574712643,
+        "participant_value": 10.638297872340411,
+        "delta": 8.339447297627768,
+        "delta_percentage": 362.750177814073,
+        "causal_explanation": "Speaking rate accelerated / rushed to 10.64 wps (+362.8% vs baseline 2.30 wps) over interval [17.58s - 18.52s] (0.94s) across phrase: \"that disorienting moment you realize that adaptability is the greatest\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 18.01,
+        "end_time": 19.02,
+        "duration": 1.009999999999998,
+        "affected_text": "moment you realize that adaptability is the greatest survival skill",
+        "baseline_value": 60.595757973849196,
+        "participant_value": 37.099839492616866,
+        "delta": -23.49591848123233,
+        "delta_percentage": -38.77479297573812,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 38.8% (37.10 Hz vs 60.60 Hz baseline) over interval [18.01s - 19.02s] (1.01s) across phrase: \"moment you realize that adaptability is the greatest survival skill\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 18.76,
+        "end_time": 19.44,
+        "duration": 0.6799999999999997,
+        "affected_text": "that adaptability is the greatest survival skill of",
+        "baseline_value": 0.03911100169061708,
+        "participant_value": 0.02337992750108242,
+        "delta": -0.015731074189534656,
+        "delta_percentage": -40.119031678037935,
+        "causal_explanation": "Localized vocal energy RMS dropped by 40.1% (0.0234 RMS vs 0.0391 RMS baseline) over interval [18.76s - 19.44s] (0.68s) across phrase: \"that adaptability is the greatest survival skill of\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            17.58,
+            18.52
+          ],
+          "reference_interval": [
+            17.58,
+            18.52
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            18.01,
+            19.02
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            18.76,
+            19.44
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "severe_pacing",
+    "overall_score": 61.11939038295233,
+    "dimension_scores": {
+      "pacing": 4.743106505008354,
+      "pitch": 13.38593095416105,
+      "volume": 18.42097355752926,
+      "fluency": 24.569379366253674
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 21.78,
+        "end_time": 22.83,
+        "duration": 1.0499999999999972,
+        "affected_text": "itinerary it invites us to explore the maze embrace the",
+        "baseline_value": 2.8089887640449422,
+        "participant_value": 9.52380952380955,
+        "delta": 6.714820759764608,
+        "delta_percentage": 239.0391092553307,
+        "causal_explanation": "Speaking rate accelerated / rushed to 9.52 wps (+239.0% vs baseline 2.81 wps) over interval [21.78s - 22.83s] (1.05s) across phrase: \"itinerary it invites us to explore the maze embrace the\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 20.28,
+        "end_time": 21.664,
+        "duration": 1.3840000000000003,
+        "affected_text": "Life rarely hands us a detailed itinerary it invites us",
+        "baseline_value": 75.16859530514216,
+        "participant_value": 41.621248621883275,
+        "delta": -33.54734668325889,
+        "delta_percentage": -44.629411947454635,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 44.6% (41.62 Hz vs 75.17 Hz baseline) over interval [20.28s - 21.66s] (1.38s) across phrase: \"Life rarely hands us a detailed itinerary it invites us\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 25.941,
+        "duration": 25.941,
+        "affected_text": "Entire passage delivery (volume shift)",
+        "baseline_value": 0.03911100169061708,
+        "participant_value": 0.07135727881040892,
+        "delta": 0.03224627711979184,
+        "delta_percentage": 82.23783053088427,
+        "causal_explanation": "Mean vocal energy RMS elevated by 82.2% (0.0714 RMS vs 0.0391 RMS baseline) across entire passage."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            21.78,
+            22.83
+          ],
+          "reference_interval": [
+            21.78,
+            22.83
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            20.28,
+            21.664
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            25.941
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "flat_tone",
+    "overall_score": 58.637934118287774,
+    "dimension_scores": {
+      "pacing": 16.034287707974897,
+      "pitch": 5.830363794724613,
+      "volume": 12.264976624905374,
+      "fluency": 24.508305990682892
+    },
+    "severities": {
+      "pacing": 2,
+      "pitch": 2,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 2,
+        "start_time": 10.24,
+        "end_time": 12.74,
+        "duration": 2.5,
+        "affected_text": "speak an unfamiliar tongue the alleys twist in unforeseen directions",
+        "baseline_value": 1.9841269841269844,
+        "participant_value": 4.0,
+        "delta": 2.015873015873016,
+        "delta_percentage": 101.59487961806724,
+        "causal_explanation": "Speaking rate accelerated / rushed to 4.00 wps (+101.6% vs baseline 1.98 wps) over interval [10.24s - 12.74s] (2.50s) across phrase: \"speak an unfamiliar tongue the alleys twist in unforeseen directions\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 2,
+        "start_time": 29.57,
+        "end_time": 32.07,
+        "duration": 2.5,
+        "affected_text": "itinerary it invites us to explore the maze embrace the",
+        "baseline_value": 72.47109525786952,
+        "participant_value": 9.669113314887692,
+        "delta": -62.801981942981826,
+        "delta_percentage": -86.65785312290991,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 86.7% (9.67 Hz vs 72.47 Hz baseline) over interval [29.57s - 32.07s] (2.50s) across phrase: \"itinerary it invites us to explore the maze embrace the\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 29.82,
+        "end_time": 31.82,
+        "duration": 2.0,
+        "affected_text": "it invites us to explore the maze embrace",
+        "baseline_value": 0.03911100169061708,
+        "participant_value": 0.004074376542121172,
+        "delta": -0.035036625148495905,
+        "delta_percentage": -89.35406808768144,
+        "causal_explanation": "Localized vocal energy RMS dropped by 89.4% (0.0041 RMS vs 0.0391 RMS baseline) over interval [29.82s - 31.82s] (2.00s) across phrase: \"it invites us to explore the maze embrace\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            10.24,
+            12.74
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": "pitch",
+          "predicted_interval": [
+            29.57,
+            32.07
+          ],
+          "reference_interval": [
+            29.57,
+            32.07
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            29.82,
+            31.82
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "bad_pause",
+    "overall_score": 61.83175070263691,
+    "dimension_scores": {
+      "pacing": 19.374217265688078,
+      "pitch": 7.215450191292133,
+      "volume": 23.77922965402212,
+      "fluency": 11.462853591634586
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 2
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 37.56,
+        "end_time": 45.54,
+        "duration": 7.979999999999997,
+        "affected_text": "on curiosity intuition and the kindness of strangers Life rarely",
+        "baseline_value": 2.6385224274406314,
+        "participant_value": 1.253132832080201,
+        "delta": -1.3853895953604303,
+        "delta_percentage": -52.50427575210933,
+        "causal_explanation": "Speaking rate dragged / prolonged to 1.25 wps (-52.5% vs baseline 2.64 wps) over interval [37.56s - 45.54s] (7.98s) across phrase: \"on curiosity intuition and the kindness of strangers Life rarely\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 45.54,
+        "end_time": 50.11,
+        "duration": 4.57,
+        "affected_text": "hands us a detailed itinerary it invites us to explore",
+        "baseline_value": 74.31559780174419,
+        "participant_value": 20.803832735799755,
+        "delta": -53.51176506594443,
+        "delta_percentage": -72.00600498793743,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 72.0% (20.80 Hz vs 74.32 Hz baseline) over interval [45.54s - 50.11s] (4.57s) across phrase: \"hands us a detailed itinerary it invites us to explore\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 2,
+        "start_time": 15.6,
+        "end_time": 17.056,
+        "duration": 1.456,
+        "affected_text": "Unnatural silence gap between \"directions\" and \"and\"",
+        "baseline_value": 0.4080000000000001,
+        "participant_value": 1.456,
+        "delta": 1.0479999999999998,
+        "delta_percentage": 256.7998039696152,
+        "causal_explanation": "Longest silence interval reached 1.46s (+256.8% longer than baseline average pause of 0.41s) between 15.60s and 17.06s (Unnatural silence gap between \"directions\" and \"and\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            37.56,
+            45.54
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            45.54,
+            50.11
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            15.6,
+            17.056
+          ],
+          "reference_interval": [
+            15.6,
+            17.056
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_008",
+    "version": "low_volume",
+    "overall_score": 56.403407898054105,
+    "dimension_scores": {
+      "pacing": 5.117569761975982,
+      "pitch": 6.8431946585139265,
+      "volume": 20.5311205817894,
+      "fluency": 23.9115228957748
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 18.07,
+        "end_time": 18.57,
+        "duration": 0.5,
+        "affected_text": "familiar landmarks vanish you must rely on curiosity intuition and",
+        "baseline_value": 2.207505518763796,
+        "participant_value": 20.0,
+        "delta": 17.792494481236204,
+        "delta_percentage": 805.9634898539098,
+        "causal_explanation": "Speaking rate accelerated / rushed to 20.00 wps (+806.0% vs baseline 2.21 wps) over interval [18.07s - 18.57s] (0.50s) across phrase: \"familiar landmarks vanish you must rely on curiosity intuition and\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 18.07,
+        "end_time": 18.57,
+        "duration": 0.5,
+        "affected_text": "familiar landmarks vanish you must rely on curiosity intuition and",
+        "baseline_value": 64.98122341845789,
+        "participant_value": 11.215333000658331,
+        "delta": -53.765890417799554,
+        "delta_percentage": -82.74052849241818,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 82.7% (11.22 Hz vs 64.98 Hz baseline) over interval [18.07s - 18.57s] (0.50s) across phrase: \"familiar landmarks vanish you must rely on curiosity intuition and\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            18.07,
+            18.57
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            18.07,
+            18.57
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "good",
+    "overall_score": 97.02346184709228,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 22.02346184709228,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "near_perfect",
+    "overall_score": 75.1584951489795,
+    "dimension_scores": {
+      "pacing": 5.138931458564805,
+      "pitch": 22.47605787349848,
+      "volume": 23.07432751603389,
+      "fluency": 24.46917830088232
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 9.65,
+        "end_time": 10.291,
+        "duration": 0.641,
+        "affected_text": "rapid clicks and fleeting reactions mistaking visibility for understanding But",
+        "baseline_value": 2.083333333333334,
+        "participant_value": 15.600624024960998,
+        "delta": 13.517290691627665,
+        "delta_percentage": 648.7988108552065,
+        "causal_explanation": "Speaking rate accelerated / rushed to 15.60 wps (+648.8% vs baseline 2.08 wps) over interval [9.65s - 10.29s] (0.64s) across phrase: \"rapid clicks and fleeting reactions mistaking visibility for understanding But\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            9.65,
+            10.291
+          ],
+          "reference_interval": [
+            9.65,
+            10.291
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "mild_pacing",
+    "overall_score": 58.72079380119804,
+    "dimension_scores": {
+      "pacing": 6.096749166698595,
+      "pitch": 8.820964221025495,
+      "volume": 20.022788263696995,
+      "fluency": 23.780292149776958
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 17.62,
+        "end_time": 17.94,
+        "duration": 0.3200000000000003,
+        "affected_text": "it is an active moral discipline that demands our presence",
+        "baseline_value": 2.9498525073746307,
+        "participant_value": 31.24999999999997,
+        "delta": 28.300147492625342,
+        "delta_percentage": 959.3424782899853,
+        "causal_explanation": "Speaking rate accelerated / rushed to 31.25 wps (+959.3% vs baseline 2.95 wps) over interval [17.62s - 17.94s] (0.32s) across phrase: \"it is an active moral discipline that demands our presence\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 17.12,
+        "end_time": 17.26,
+        "duration": 0.14000000000000057,
+        "affected_text": "automatic instinct it is an active moral discipline that demands",
+        "baseline_value": 59.95910585111309,
+        "participant_value": 3.3326951706149446,
+        "delta": -56.62641068049814,
+        "delta_percentage": -94.44156218664614,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 94.4% (3.33 Hz vs 59.96 Hz baseline) over interval [17.12s - 17.26s] (0.14s) across phrase: \"automatic instinct it is an active moral discipline that demands\", producing localized monotone delivery."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            17.62,
+            17.94
+          ],
+          "reference_interval": [
+            17.62,
+            17.94
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            17.12,
+            17.26
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "severe_pacing",
+    "overall_score": 59.4478205801711,
+    "dimension_scores": {
+      "pacing": 10.564955058553938,
+      "pitch": 11.378214233308077,
+      "volume": 13.152964444487614,
+      "fluency": 24.351686843821465
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 20.928,
+        "end_time": 22.508,
+        "duration": 1.5799999999999983,
+        "affected_text": "moral discipline that demands our presence our patience and our",
+        "baseline_value": 2.341920374707258,
+        "participant_value": 6.32911392405064,
+        "delta": 3.987193549343382,
+        "delta_percentage": 170.2458950572436,
+        "causal_explanation": "Speaking rate accelerated / rushed to 6.33 wps (+170.2% vs baseline 2.34 wps) over interval [20.93s - 22.51s] (1.58s) across phrase: \"moral discipline that demands our presence our patience and our\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 22.131,
+        "end_time": 24.508,
+        "duration": 2.376999999999999,
+        "affected_text": "and our willingness to listen without interrupting When we look",
+        "baseline_value": 62.40633607283843,
+        "participant_value": 27.461240176708795,
+        "delta": -34.94509589612963,
+        "delta_percentage": -55.99598069555364,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 56.0% (27.46 Hz vs 62.41 Hz baseline) over interval [22.13s - 24.51s] (2.38s) across phrase: \"and our willingness to listen without interrupting When we look\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 26.258,
+        "end_time": 28.258,
+        "duration": 2.0,
+        "affected_text": "burdens carried by our neighbors we restore dignity",
+        "baseline_value": 0.047896954012623984,
+        "participant_value": 0.004387688357383013,
+        "delta": -0.04350926565524097,
+        "delta_percentage": -90.6500559260434,
+        "causal_explanation": "Localized vocal energy RMS dropped by 90.7% (0.0044 RMS vs 0.0479 RMS baseline) over interval [26.26s - 28.26s] (2.00s) across phrase: \"burdens carried by our neighbors we restore dignity\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            20.928,
+            22.508
+          ],
+          "reference_interval": [
+            20.928,
+            22.508
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            22.131,
+            24.508
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            26.258,
+            28.258
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "flat_tone",
+    "overall_score": 50.44122398805291,
+    "dimension_scores": {
+      "pacing": 5.5029021876556445,
+      "pitch": 5.960164999385897,
+      "volume": 14.455458025197279,
+      "fluency": 24.522698775814096
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 2,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 28.7,
+        "end_time": 29.44,
+        "duration": 0.740000000000002,
+        "affected_text": "Empathy is not a concession of weakness it is the",
+        "baseline_value": 3.0156815440289515,
+        "participant_value": 13.513513513513477,
+        "delta": 10.497831969484526,
+        "delta_percentage": 348.09656522600386,
+        "causal_explanation": "Speaking rate accelerated / rushed to 13.51 wps (+348.1% vs baseline 3.02 wps) over interval [28.70s - 29.44s] (0.74s) across phrase: \"Empathy is not a concession of weakness it is the\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 2,
+        "start_time": 28.2,
+        "end_time": 29.07,
+        "duration": 0.870000000000001,
+        "affected_text": "public life Empathy is not a concession of weakness it",
+        "baseline_value": 71.87366239218758,
+        "participant_value": 8.431577486586374,
+        "delta": -63.442084905601206,
+        "delta_percentage": -88.2687684546442,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 88.3% (8.43 Hz vs 71.87 Hz baseline) over interval [28.20s - 29.07s] (0.87s) across phrase: \"public life Empathy is not a concession of weakness it\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 29.95,
+        "end_time": 30.19,
+        "duration": 0.240000000000002,
+        "affected_text": "of weakness it is the cornerstone of our",
+        "baseline_value": 0.047896954012623984,
+        "participant_value": 0.017445934936404228,
+        "delta": -0.030451019076219756,
+        "delta_percentage": -63.443649087003806,
+        "causal_explanation": "Localized vocal energy RMS dropped by 63.4% (0.0174 RMS vs 0.0479 RMS baseline) over interval [29.95s - 30.19s] (0.24s) across phrase: \"of weakness it is the cornerstone of our\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            28.7,
+            29.44
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": "pitch",
+          "predicted_interval": [
+            28.2,
+            29.07
+          ],
+          "reference_interval": [
+            28.2,
+            29.07
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            29.95,
+            30.19
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "bad_pause",
+    "overall_score": 55.419364412735206,
+    "dimension_scores": {
+      "pacing": 17.55007158873365,
+      "pitch": 13.689402478583224,
+      "volume": 19.67599008426659,
+      "fluency": 4.5039002611517445
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 3
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 30.64,
+        "end_time": 43.95,
+        "duration": 13.310000000000002,
+        "affected_text": "moral discipline that demands our presence our patience and our",
+        "baseline_value": 2.341920374707258,
+        "participant_value": 0.7513148009015777,
+        "delta": -1.5906055738056804,
+        "delta_percentage": -67.91595799009642,
+        "causal_explanation": "Speaking rate dragged / prolonged to 0.75 wps (-67.9% vs baseline 2.34 wps) over interval [30.64s - 43.95s] (13.31s) across phrase: \"moral discipline that demands our presence our patience and our\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 6.37,
+        "duration": 6.37,
+        "affected_text": "In an age illuminated by glowing screens and separated by",
+        "baseline_value": 66.15099308348157,
+        "participant_value": 28.65532883512238,
+        "delta": -37.49566424835919,
+        "delta_percentage": -56.6818513505745,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 56.7% (28.66 Hz vs 66.15 Hz baseline) over interval [0.00s - 6.37s] (6.37s) across phrase: \"In an age illuminated by glowing screens and separated by\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 60.75,
+        "end_time": 63.73,
+        "duration": 2.979999999999997,
+        "affected_text": "a concession of weakness it is the cornerstone",
+        "baseline_value": 0.047896954012623984,
+        "participant_value": 0.03525468334555626,
+        "delta": -0.012642270667067725,
+        "delta_percentage": -26.339735358503376,
+        "causal_explanation": "Localized vocal energy RMS dropped by 26.3% (0.0353 RMS vs 0.0479 RMS baseline) over interval [60.75s - 63.73s] (2.98s) across phrase: \"a concession of weakness it is the cornerstone\", causing diminished vocal audibility."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 3,
+        "start_time": 39.008,
+        "end_time": 40.8,
+        "duration": 1.792,
+        "affected_text": "Unnatural silence gap between \"presence\" and \"our\"",
+        "baseline_value": 0.44480000000000003,
+        "participant_value": 1.792,
+        "delta": 1.3472,
+        "delta_percentage": 302.80962013935715,
+        "causal_explanation": "Longest silence interval reached 1.79s (+302.8% longer than baseline average pause of 0.44s) between 39.01s and 40.80s (Unnatural silence gap between \"presence\" and \"our\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            30.64,
+            43.95
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            6.37
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            60.75,
+            63.73
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            39.008,
+            40.8
+          ],
+          "reference_interval": [
+            39.008,
+            40.8
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_009",
+    "version": "low_volume",
+    "overall_score": 51.01586105143544,
+    "dimension_scores": {
+      "pacing": 5.560371250143673,
+      "pitch": 8.946483982267777,
+      "volume": 12.561399806769701,
+      "fluency": 23.94760601225428
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 4.899,
+        "end_time": 6.202,
+        "duration": 1.303,
+        "affected_text": "human connection has paradoxically become fragile We measure interactions in",
+        "baseline_value": 2.1097046413502114,
+        "participant_value": 7.674597083653109,
+        "delta": 5.564892442302897,
+        "delta_percentage": 263.7633993800266,
+        "causal_explanation": "Speaking rate accelerated / rushed to 7.67 wps (+263.8% vs baseline 2.11 wps) over interval [4.90s - 6.20s] (1.30s) across phrase: \"human connection has paradoxically become fragile We measure interactions in\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 0.0,
+        "end_time": 4.399,
+        "duration": 4.399,
+        "affected_text": "In an age illuminated by glowing screens and separated by",
+        "baseline_value": 66.15099308348157,
+        "participant_value": 26.937651799445778,
+        "delta": -39.21334128403579,
+        "delta_percentage": -59.278447953307754,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 59.3% (26.94 Hz vs 66.15 Hz baseline) over interval [0.00s - 4.40s] (4.40s) across phrase: \"In an age illuminated by glowing screens and separated by\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 5.649,
+        "end_time": 6.452,
+        "duration": 0.8029999999999999,
+        "affected_text": "paradoxically become fragile We measure interactions in rapid",
+        "baseline_value": 0.047896954012623984,
+        "participant_value": 0.016243290156126022,
+        "delta": -0.03165366385649796,
+        "delta_percentage": -65.94931805083407,
+        "causal_explanation": "Localized vocal energy RMS dropped by 65.9% (0.0162 RMS vs 0.0479 RMS baseline) over interval [5.65s - 6.45s] (0.80s) across phrase: \"paradoxically become fragile We measure interactions in rapid\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            4.899,
+            6.202
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            0.0,
+            4.399
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            5.649,
+            6.452
+          ],
+          "reference_interval": [
+            5.649,
+            6.452
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "good",
+    "overall_score": 98.08057269887819,
+    "dimension_scores": {
+      "pacing": 25.0,
+      "pitch": 25.0,
+      "volume": 23.080572698878186,
+      "fluency": 25.0
+    },
+    "severities": {
+      "pacing": 0,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": []
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "near_perfect",
+    "overall_score": 86.77607401750127,
+    "dimension_scores": {
+      "pacing": 18.920924245664985,
+      "pitch": 19.117644435086827,
+      "volume": 24.125289975424376,
+      "fluency": 24.61221536132508
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 0,
+      "volume": 0,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 24.0,
+        "end_time": 26.89,
+        "duration": 2.8900000000000006,
+        "affected_text": "from afar but darkness cannot advance upon a flame One",
+        "baseline_value": 1.972386587771203,
+        "participant_value": 3.4602076124567467,
+        "delta": 1.4878210246855437,
+        "delta_percentage": 75.42870171638005,
+        "causal_explanation": "Speaking rate accelerated / rushed to 3.46 wps (+75.4% vs baseline 1.97 wps) over interval [24.00s - 26.89s] (2.89s) across phrase: \"from afar but darkness cannot advance upon a flame One\"."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            24.0,
+            26.89
+          ],
+          "reference_interval": [
+            2.25,
+            5.843
+          ],
+          "iou": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "mild_pacing",
+    "overall_score": 50.60341835982409,
+    "dimension_scores": {
+      "pacing": 4.119288215687103,
+      "pitch": 6.598041945048994,
+      "volume": 17.532756741744052,
+      "fluency": 22.353331457343945
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 13.91,
+        "end_time": 14.91,
+        "duration": 1.0,
+        "affected_text": "to extinguish the light yet the hand remained steady and",
+        "baseline_value": 2.2675736961451256,
+        "participant_value": 10.0,
+        "delta": 7.732426303854874,
+        "delta_percentage": 340.98496256315076,
+        "causal_explanation": "Speaking rate accelerated / rushed to 10.00 wps (+341.0% vs baseline 2.27 wps) over interval [13.91s - 14.91s] (1.00s) across phrase: \"to extinguish the light yet the hand remained steady and\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 14.123,
+        "end_time": 16.11,
+        "duration": 1.987,
+        "affected_text": "yet the hand remained steady and the journey continued unbroken",
+        "baseline_value": 35.31073128278078,
+        "participant_value": 5.7279567829924956,
+        "delta": -29.582774499788282,
+        "delta_percentage": -83.77818766961238,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 83.8% (5.73 Hz vs 35.31 Hz baseline) over interval [14.12s - 16.11s] (1.99s) across phrase: \"yet the hand remained steady and the journey continued unbroken\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 2.28,
+        "end_time": 4.72,
+        "duration": 2.44,
+        "affected_text": "a dense shroud of fog Along the steep",
+        "baseline_value": 0.041870454775993236,
+        "participant_value": 0.024985671043395996,
+        "delta": -0.01688478373259724,
+        "delta_percentage": -40.230166250796024,
+        "causal_explanation": "Localized vocal energy RMS dropped by 40.2% (0.0250 RMS vs 0.0419 RMS baseline) over interval [2.28s - 4.72s] (2.44s) across phrase: \"a dense shroud of fog Along the steep\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            13.91,
+            14.91
+          ],
+          "reference_interval": [
+            13.91,
+            14.91
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            14.123,
+            16.11
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.28,
+            4.72
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "severe_pacing",
+    "overall_score": 49.01514791084307,
+    "dimension_scores": {
+      "pacing": 3.1910573393527706,
+      "pitch": 11.347715358249141,
+      "volume": 13.084326107292094,
+      "fluency": 21.392049105949063
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 1,
+      "volume": 1,
+      "fluency": 1
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 14.73,
+        "end_time": 15.75,
+        "duration": 1.0199999999999996,
+        "affected_text": "when viewed from afar but darkness cannot advance upon a",
+        "baseline_value": 2.2522522522522515,
+        "participant_value": 9.803921568627455,
+        "delta": 7.551669316375204,
+        "delta_percentage": 335.2792312491917,
+        "causal_explanation": "Speaking rate accelerated / rushed to 9.80 wps (+335.3% vs baseline 2.25 wps) over interval [14.73s - 15.75s] (1.02s) across phrase: \"when viewed from afar but darkness cannot advance upon a\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 14.73,
+        "end_time": 15.75,
+        "duration": 1.0199999999999996,
+        "affected_text": "when viewed from afar but darkness cannot advance upon a",
+        "baseline_value": 39.888093011919295,
+        "participant_value": 10.35527380274274,
+        "delta": -29.532819209176555,
+        "delta_percentage": -74.03899996259953,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 74.0% (10.36 Hz vs 39.89 Hz baseline) over interval [14.73s - 15.75s] (1.02s) across phrase: \"when viewed from afar but darkness cannot advance upon a\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 22.471,
+        "end_time": 24.28,
+        "duration": 1.809000000000001,
+        "affected_text": "the longest shadows and illuminate the path ahead",
+        "baseline_value": 0.041870454775993236,
+        "participant_value": 0.008624213747680187,
+        "delta": -0.03324624102831305,
+        "delta_percentage": -79.21344003956237,
+        "causal_explanation": "Localized vocal energy RMS dropped by 79.2% (0.0086 RMS vs 0.0419 RMS baseline) over interval [22.47s - 24.28s] (1.81s) across phrase: \"the longest shadows and illuminate the path ahead\", causing diminished vocal audibility."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 1,
+        "start_time": 22.656,
+        "end_time": 23.488,
+        "duration": 0.832,
+        "affected_text": "Unnatural silence gap between \"longest\" and \"the\"",
+        "baseline_value": 0.5045333333333334,
+        "participant_value": 0.832,
+        "delta": 0.3274666666666666,
+        "delta_percentage": 64.89200079265471,
+        "causal_explanation": "Longest silence interval reached 0.83s (+64.9% longer than baseline average pause of 0.50s) between 22.66s and 23.49s (Unnatural silence gap between \"longest\" and \"the\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": "pacing",
+          "predicted_interval": [
+            14.73,
+            15.75
+          ],
+          "reference_interval": [
+            14.73,
+            15.75
+          ],
+          "iou": 1.0
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            14.73,
+            15.75
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            22.471,
+            24.28
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            22.656,
+            23.488
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "flat_tone",
+    "overall_score": 65.80050122627405,
+    "dimension_scores": {
+      "pacing": 5.11080756086241,
+      "pitch": 18.12694173328301,
+      "volume": 18.73124671848067,
+      "fluency": 23.831505213647958
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 0,
+      "volume": 1,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 16.495,
+        "end_time": 17.368,
+        "duration": 0.8729999999999976,
+        "affected_text": "to extinguish the light yet the hand remained steady and",
+        "baseline_value": 2.2675736961451256,
+        "participant_value": 11.454753722794992,
+        "delta": 9.187180026649866,
+        "delta_percentage": 405.1367726435853,
+        "causal_explanation": "Speaking rate accelerated / rushed to 11.45 wps (+405.1% vs baseline 2.27 wps) over interval [16.50s - 17.37s] (0.87s) across phrase: \"to extinguish the light yet the hand remained steady and\"."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 1,
+        "start_time": 30.45,
+        "end_time": 32.29,
+        "duration": 1.8399999999999999,
+        "affected_text": "the longest shadows and illuminate the path ahead",
+        "baseline_value": 0.041870454775993236,
+        "participant_value": 0.026166465133428574,
+        "delta": -0.015703989642564663,
+        "delta_percentage": -37.41677264728429,
+        "causal_explanation": "Localized vocal energy RMS dropped by 37.4% (0.0262 RMS vs 0.0419 RMS baseline) over interval [30.45s - 32.29s] (1.84s) across phrase: \"the longest shadows and illuminate the path ahead\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 0.0,
+      "mean_iou": 0.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            16.495,
+            17.368
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            30.45,
+            32.29
+          ],
+          "reference_interval": null,
+          "iou": null
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "bad_pause",
+    "overall_score": 61.33720629392662,
+    "dimension_scores": {
+      "pacing": 17.87958927588365,
+      "pitch": 10.061579084270376,
+      "volume": 12.949013047310215,
+      "fluency": 20.44702488646238
+    },
+    "severities": {
+      "pacing": 1,
+      "pitch": 1,
+      "volume": 2,
+      "fluency": 1
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 1,
+        "start_time": 2.866,
+        "end_time": 10.04,
+        "duration": 7.1739999999999995,
+        "affected_text": "wrapping the damp road in a dense shroud of fog",
+        "baseline_value": 4.385964912280702,
+        "participant_value": 1.3939224979091163,
+        "delta": -2.9920424143715856,
+        "delta_percentage": -68.2170116998054,
+        "causal_explanation": "Speaking rate dragged / prolonged to 1.39 wps (-68.2% vs baseline 4.39 wps) over interval [2.87s - 10.04s] (7.17s) across phrase: \"wrapping the damp road in a dense shroud of fog\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 1,
+        "start_time": 2.866,
+        "end_time": 10.04,
+        "duration": 7.1739999999999995,
+        "affected_text": "wrapping the damp road in a dense shroud of fog",
+        "baseline_value": 51.688600570152836,
+        "participant_value": 14.848772516043116,
+        "delta": -36.83982805410972,
+        "delta_percentage": -71.27249794974055,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 71.3% (14.85 Hz vs 51.69 Hz baseline) over interval [2.87s - 10.04s] (7.17s) across phrase: \"wrapping the damp road in a dense shroud of fog\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 61.2,
+        "end_time": 63.13,
+        "duration": 1.9299999999999997,
+        "affected_text": "the longest shadows and illuminate the path ahead",
+        "baseline_value": 0.041870454775993236,
+        "participant_value": 0.01401841826736927,
+        "delta": -0.027852036508623966,
+        "delta_percentage": -66.36105483554375,
+        "causal_explanation": "Localized vocal energy RMS dropped by 66.4% (0.0140 RMS vs 0.0419 RMS baseline) over interval [61.20s - 63.13s] (1.93s) across phrase: \"the longest shadows and illuminate the path ahead\", causing diminished vocal audibility."
+      },
+      {
+        "flaw_type": "fluency",
+        "severity": 1,
+        "start_time": 7.248,
+        "end_time": 8.928,
+        "duration": 1.68,
+        "affected_text": "Unnatural silence gap between \"dense\" and \"shroud\"",
+        "baseline_value": 0.5045333333333334,
+        "participant_value": 1.68,
+        "delta": 1.1754666666666664,
+        "delta_percentage": 232.9348041482264,
+        "causal_explanation": "Longest silence interval reached 1.68s (+232.9% longer than baseline average pause of 0.50s) between 7.25s and 8.93s (Unnatural silence gap between \"dense\" and \"shroud\"), breaking communicative continuity."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.866,
+            10.04
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.866,
+            10.04
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            61.2,
+            63.13
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "fluency",
+          "ref_flaw_type": "pause",
+          "predicted_interval": [
+            7.248,
+            8.928
+          ],
+          "reference_interval": [
+            7.248,
+            8.928
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "speech_id": "speech_010",
+    "version": "low_volume",
+    "overall_score": 39.88401360971531,
+    "dimension_scores": {
+      "pacing": 5.25848065482469,
+      "pitch": 0.0,
+      "volume": 11.67081427728288,
+      "fluency": 22.954718677607744
+    },
+    "severities": {
+      "pacing": 3,
+      "pitch": 2,
+      "volume": 2,
+      "fluency": 0
+    },
+    "detected_flaws": [
+      {
+        "flaw_type": "pacing",
+        "severity": 3,
+        "start_time": 18.18,
+        "end_time": 19.25,
+        "duration": 1.0700000000000003,
+        "affected_text": "yet the hand remained steady and the journey continued unbroken",
+        "baseline_value": 1.9379844961240316,
+        "participant_value": 9.345794392523363,
+        "delta": 7.407809896399331,
+        "delta_percentage": 382.22326793358,
+        "causal_explanation": "Speaking rate accelerated / rushed to 9.35 wps (+382.2% vs baseline 1.94 wps) over interval [18.18s - 19.25s] (1.07s) across phrase: \"yet the hand remained steady and the journey continued unbroken\"."
+      },
+      {
+        "flaw_type": "pitch",
+        "severity": 2,
+        "start_time": 2.372,
+        "end_time": 4.52,
+        "duration": 2.1479999999999997,
+        "affected_text": "The night was thick and unforgiving wrapping the damp road",
+        "baseline_value": 52.81788304596903,
+        "participant_value": 4.957951816684979,
+        "delta": -47.85993122928406,
+        "delta_percentage": -90.61294746455987,
+        "causal_explanation": "Pitch intonation standard deviation collapsed by 90.6% (4.96 Hz vs 52.82 Hz baseline) over interval [2.37s - 4.52s] (2.15s) across phrase: \"The night was thick and unforgiving wrapping the damp road\", producing localized monotone delivery."
+      },
+      {
+        "flaw_type": "volume",
+        "severity": 2,
+        "start_time": 17.93,
+        "end_time": 18.42,
+        "duration": 0.490000000000002,
+        "affected_text": "light yet the hand remained steady and the",
+        "baseline_value": 0.041870454775993236,
+        "participant_value": 0.011804183013737202,
+        "delta": -0.030066271762256035,
+        "delta_percentage": -71.63675476648325,
+        "causal_explanation": "Localized vocal energy RMS dropped by 71.6% (0.0118 RMS vs 0.0419 RMS baseline) over interval [17.93s - 18.42s] (0.49s) across phrase: \"light yet the hand remained steady and the\", causing diminished vocal audibility."
+      }
+    ],
+    "temporal_iou": {
+      "target_flaw_iou": 1.0,
+      "mean_iou": 1.0,
+      "flaw_ious": [
+        {
+          "flaw_type": "pacing",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            18.18,
+            19.25
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "pitch",
+          "ref_flaw_type": null,
+          "predicted_interval": [
+            2.372,
+            4.52
+          ],
+          "reference_interval": null,
+          "iou": null
+        },
+        {
+          "flaw_type": "volume",
+          "ref_flaw_type": "volume",
+          "predicted_interval": [
+            17.93,
+            18.42
+          ],
+          "reference_interval": [
+            17.93,
+            18.42
+          ],
+          "iou": 1.0
+        }
+      ]
+    }
+  }
+]

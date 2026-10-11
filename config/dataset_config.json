@@ -1,0 +1,152 @@
+{
+  "dataset_name": "speech-contrastive-dataset",
+  "challenge": "Multimodal AI Hackathon 2026 – Track C: Contrastive Speech Analytics & Temporal Flaw Grounding",
+  "version": "1.0.0-template",
+  "status": "pending_audio_recordings",
+  "number_of_speeches": 10,
+  "audio_specifications": {
+    "format": "wav",
+    "target_sample_rate": 16000,
+    "channels": 1,
+    "bit_depth": 16
+  },
+  "audio_versions": [
+    {
+      "version": "good",
+      "flaw_type": "none",
+      "severity": 0,
+      "description": "Ideal baseline delivery with expressive cadence, clear articulation, and natural pauses",
+      "target_feature": "all"
+    },
+    {
+      "version": "near_perfect",
+      "flaw_type": "pacing",
+      "severity": 1,
+      "description": "Near-perfect delivery with very small pacing deviation",
+      "target_feature": "speech_rate"
+    },
+    {
+      "version": "mild_pacing",
+      "flaw_type": "pacing",
+      "severity": 2,
+      "description": "Noticeably fast or rushed delivery",
+      "target_feature": "speech_rate"
+    },
+    {
+      "version": "severe_pacing",
+      "flaw_type": "pacing",
+      "severity": 3,
+      "description": "Extremely fast, hurried delivery with compressed syllables",
+      "target_feature": "speech_rate"
+    },
+    {
+      "version": "flat_tone",
+      "flaw_type": "pitch",
+      "severity": 2,
+      "description": "Monotone delivery with reduced fundamental frequency variation",
+      "target_feature": "pitch"
+    },
+    {
+      "version": "bad_pause",
+      "flaw_type": "pause",
+      "severity": 3,
+      "description": "Awkward, unnatural pause duration or misplaced silence",
+      "target_feature": "pause_duration"
+    },
+    {
+      "version": "low_volume",
+      "flaw_type": "volume",
+      "severity": 2,
+      "description": "Reduced vocal intensity and low RMS energy",
+      "target_feature": "energy"
+    }
+  ],
+  "flaw_types": [
+    "none",
+    "pacing",
+    "pitch",
+    "pause",
+    "volume",
+    "clarity",
+    "mixed"
+  ],
+  "severity_levels": {
+    "0": "ideal / no flaw",
+    "1": "near-perfect / minor deviation",
+    "2": "moderate flaw",
+    "3": "severe flaw"
+  },
+  "required_features": [
+    "mfcc",
+    "pitch",
+    "energy",
+    "speech_rate",
+    "pauses",
+    "fft"
+  ],
+  "annotation_fields": {
+    "labels": [
+      "speech_id",
+      "version",
+      "audio_file",
+      "flaw_type",
+      "severity",
+      "description",
+      "target_feature"
+    ],
+    "temporal_annotations": [
+      "speech_id",
+      "version",
+      "flaw_id",
+      "flaw_type",
+      "severity",
+      "start_time",
+      "end_time",
+      "duration",
+      "affected_text",
+      "baseline_value",
+      "participant_value",
+      "delta",
+      "delta_percentage",
+      "causal_explanation"
+    ],
+    "word_alignment": [
+      "speech_id",
+      "version",
+      "word_index",
+      "word",
+      "start_time",
+      "end_time",
+      "confidence"
+    ]
+  },
+  "feature_parameters": {
+    "mfcc": {
+      "n_mfcc": 13,
+      "hop_length": 512,
+      "n_fft": 2048
+    },
+    "pitch": {
+      "f0_min": 65,
+      "f0_max": 400,
+      "frame_period": 10
+    },
+    "energy": {
+      "frame_length": 2048,
+      "hop_length": 512
+    },
+    "pauses": {
+      "silence_threshold_db": -35.0,
+      "min_pause_duration_sec": 0.3
+    }
+  },
+  "directory_structure": {
+    "audio_dir": "audio",
+    "transcripts_dir": "transcripts",
+    "annotations_dir": "annotations",
+    "metadata_dir": "metadata",
+    "features_dir": "features",
+    "scripts_dir": "scripts",
+    "config_dir": "config"
+  }
+}
