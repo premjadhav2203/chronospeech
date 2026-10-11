@@ -347,3 +347,4 @@ Features:
 
 This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. All speech texts in `transcripts/` are original passages created for the Multimodal AI Hackathon 2026.
 >>>>>>> f986095 (Initial commit: chronoSpeech)
+# chronospeech
